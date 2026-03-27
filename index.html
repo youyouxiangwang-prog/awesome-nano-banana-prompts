@@ -583,10 +583,13 @@
 
     <script src="data.js"></script>
     <script>
+        // Backend API URL
+        const API_BASE = 'http://localhost:3099/api';
+        
         // Like System State
         let userLikes = JSON.parse(localStorage.getItem('nanoUserLikes') || '[]');
-        let globalLikeCounts = JSON.parse(localStorage.getItem('nanoLikeCounts') || '{}');
-        let savedPrompts = JSON.parse(localStorage.getItem('nanoSavedPrompts') || '[]');
+        let globalLikeCounts = {};  // Loaded from backend
+        let savedPrompts = new Set();  // Loaded from backend
         let currentImages = [], currentIndex = 0, activeCategory = '';
 
         const grid = document.getElementById('promptsGrid');
@@ -597,6 +600,20 @@
 
         document.getElementById('promptCount').textContent = prompts.length + ' 个 Prompts';
         document.getElementById('imageCount').textContent = prompts.reduce((s, p) => s + p.images.length, 0) + ' 张图片';
+
+        // Initialize: fetch like counts from backend
+        async function init() {
+            try {
+                const res = await fetch(API_BASE + '/likes');
+                const data = await res.json();
+                globalLikeCounts = data;
+                console.log('[INIT] Loaded like counts from backend:', data);
+            } catch (e) {
+                console.warn('[INIT] Backend unavailable, using localStorage fallback');
+                globalLikeCounts = JSON.parse(localStorage.getItem('nanoLikeCounts') || '{}');
+            }
+            render();
+        }
 
         function showToast(msg, type = 'success') {
             toast.textContent = msg;
@@ -615,51 +632,52 @@
             } catch { showToast('复制失败', 'error'); }
         }
 
-        function toggleLike(promptId, btn) {
-            const card = btn.closest('.card');
-            const countEl = card.querySelector('.like-count');
-            let count = parseInt(countEl.textContent) || 0;
-
+        async function toggleLike(promptId, btn) {
             if (userLikes.includes(promptId)) {
+                // Unlike
                 userLikes = userLikes.filter(id => id !== promptId);
-                count = Math.max(0, count - 1);
                 btn.classList.remove('liked');
                 showToast('取消点赞', 'info');
-            } else {
-                userLikes.push(promptId);
-                count++;
-                btn.classList.add('liked');
-                showToast('❤️ ' + (count >= 3 ? '已达3次，将保存！' : '点赞 (' + count + '/3)'), count >= 3 ? 'success' : 'info');
-                if (count === 3) savePrompt(promptId);
+                return;
             }
 
-            countEl.textContent = count;
-            globalLikeCounts[promptId] = count;
+            // Like: send to backend
+            userLikes.push(promptId);
+            btn.classList.add('liked');
+            
+            try {
+                const res = await fetch(API_BASE + '/likes', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ promptId })
+                });
+                const data = await res.json();
+                
+                const count = data.count;
+                const card = btn.closest('.card');
+                const countEl = card.querySelector('.like-count');
+                countEl.textContent = count;
+                globalLikeCounts[promptId] = count;
+
+                if (data.saved) {
+                    savedPrompts.add(promptId);
+                    card.querySelector('.saved-badge').classList.add('show');
+                    showToast('🎉 已保存到 GitHub！', 'success');
+                } else {
+                    showToast('❤️ 点赞 (' + count + '/3)', 'info');
+                }
+            } catch (e) {
+                console.error('[LIKE] Backend error:', e);
+                showToast('网络错误，后端未连接', 'error');
+            }
+
             localStorage.setItem('nanoUserLikes', JSON.stringify(userLikes));
-            localStorage.setItem('nanoLikeCounts', JSON.stringify(globalLikeCounts));
-            updateSavedBadge(card, promptId);
         }
 
         function updateSavedBadge(card, promptId) {
             const badge = card.querySelector('.saved-badge');
-            if (savedPrompts.includes(promptId)) badge.classList.add('show');
+            if (savedPrompts.has(promptId)) badge.classList.add('show');
             else badge.classList.remove('show');
-        }
-
-        function savePrompt(promptId) {
-            const prompt = prompts.find(p => p.id === promptId);
-            if (!prompt || savedPrompts.includes(promptId)) return;
-            savedPrompts.push(promptId);
-            localStorage.setItem('nanoSavedPrompts', JSON.stringify(savedPrompts));
-            
-            const data = JSON.stringify({ prompt, savedAt: new Date().toISOString(), likes: 3 }, null, 2);
-            const blob = new Blob([data], { type: 'application/json' });
-            const a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
-            a.download = 'prompt-' + promptId + '.json';
-            a.click();
-            URL.revokeObjectURL(a.href);
-            showToast('🎉 已保存 prompt-' + promptId + '.json！', 'success');
         }
 
         function openLightbox(images, index) {
@@ -732,7 +750,7 @@
         function createCard(prompt) {
             const isLiked = userLikes.includes(prompt.id);
             const count = globalLikeCounts[prompt.id] || 0;
-            const isSaved = savedPrompts.includes(prompt.id);
+            const isSaved = savedPrompts.has(prompt.id);
             const imgCount = prompt.images.length;
 
             return `
