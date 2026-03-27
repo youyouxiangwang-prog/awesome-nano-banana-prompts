@@ -542,7 +542,7 @@
 
         function renderLightboxImages() {
             lightboxImages.innerHTML = currentImages.map((src, i) => 
-                `<img class="lightbox-img" src="${src}" alt="Image ${i+1}" crossorigin="anonymous">`
+                `<img class="lightbox-img" src="${src}" alt="Image ${i+1}" >`
             ).join('');
             lightboxCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
         }
@@ -572,7 +572,7 @@
                             class="card-image loading" 
                             src="${firstImg}" 
                             alt="${prompt.title}"
-                            crossorigin="anonymous"
+                            
                             onload="this.classList.remove('loading'); this.classList.add('loaded'); this.nextElementSibling.classList.add('hidden');"
                             onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2212%22>图片加载失败</text></svg>'; this.classList.remove('loading'); this.classList.add('loaded'); this.nextElementSibling.classList.add('hidden');"
                         >
