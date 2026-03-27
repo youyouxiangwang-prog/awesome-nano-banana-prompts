@@ -1,6 +1,6 @@
 // Nano Banana Pro Prompts Data
 // Auto-generated from awesome-nano-banana-pro-prompts README
-// Total: 129 prompts
+// Total: 128 prompts
 
 const prompts = [
   {
@@ -2092,12 +2092,11 @@ const prompts = [
     "featured": false,
     "raycast": false
   }
-];
 ,
   {
     "id": 121,
     "title": "One Pager - 盘面实战：情绪分化下的选股与仓位管理",
-    "description": "Meeting summary infographic for stock trading strategy under diverging market sentiment, generated with AI using 9:16 mobile layout.",
+    "description": "Meeting summary infographic for stock trading strategy under diverging market sentiment.",
     "prompt": "Trading market analysis meeting summary infographic with sentiment indicators, sector rotation map, and actionable playbook.",
     "images": [
       "https://raw.githubusercontent.com/youyouxiangwang-prog/meeting-notes-archive/master/infographics/01_%E7%9B%98%E9%9D%A2%E5%AE%9E%E6%88%98%EF%BC%9A%E6%83%85%E7%BB%AA%E5%88%86%E5%8C%96%E4%B8%8B%E7%9A%84%E9%80%89%E8%82%A1%E4%B8%8E%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86.png"
@@ -2188,7 +2187,7 @@ const prompts = [
   {
     "id": 128,
     "title": "One Pager - CDNIS Interview Coaching for Angela",
-    "description": "Meeting summary infographic for CDNIS interview coaching session with practical strategies and tailored answers.",
+    "description": "Meeting summary infographic for CDNIS interview coaching session with practical strategies.",
     "prompt": "School interview preparation infographic with key guidance, talking points, and action items.",
     "images": [
       "https://raw.githubusercontent.com/youyouxiangwang-prog/meeting-notes-archive/master/infographics/08_CDNIS%20Interview%20Coaching%20for%20Angela.png"
