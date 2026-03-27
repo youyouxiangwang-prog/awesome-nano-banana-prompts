@@ -24,7 +24,6 @@
             line-height: 1.6;
         }
 
-        /* Header */
         .header {
             position: sticky;
             top: 0;
@@ -64,7 +63,6 @@
 
         .stats span { margin-left: 12px; }
 
-        /* Filter Row */
         .filter-row {
             display: flex;
             gap: 12px;
@@ -92,7 +90,6 @@
             outline: none;
         }
 
-        /* Main */
         .main {
             max-width: 1400px;
             margin: 0 auto;
@@ -108,7 +105,6 @@
         @media (max-width: 768px) { .masonry { column-count: 2; } }
         @media (max-width: 480px) { .masonry { column-count: 1; } }
 
-        /* Category Tags Bar */
         .category-bar {
             display: flex;
             gap: 8px;
@@ -140,7 +136,6 @@
             color: white;
         }
 
-        /* Card */
         .card {
             break-inside: avoid;
             margin-bottom: 16px;
@@ -156,7 +151,6 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.15);
         }
 
-        /* Image Gallery */
         .card-image-container {
             position: relative;
             width: 100%;
@@ -255,7 +249,23 @@
             gap: 4px;
         }
 
-        /* Card Content */
+        .saved-badge {
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #ff4757, #ff6b81);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            display: none;
+            z-index: 10;
+        }
+
+        .saved-badge.show { display: flex; align-items: center; gap: 4px; }
+
         .card-content { padding: 14px; }
 
         .card-tags {
@@ -311,13 +321,19 @@
         .prompt-box::-webkit-scrollbar { width: 4px; }
         .prompt-box::-webkit-scrollbar-thumb { background: #ddd; border-radius: 2px; }
 
+        .action-bar {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
         .card-actions {
             display: flex;
             gap: 8px;
+            flex: 1;
         }
 
         .btn {
-            flex: 1;
             padding: 8px 12px;
             border: none;
             border-radius: 16px;
@@ -336,17 +352,34 @@
         .btn-copy:active { transform: scale(0.95); }
         .btn-copy.success { background: var(--success); }
 
-        .btn-favorite {
-            background: #FFF5F5;
-            color: var(--primary);
-            flex: 0 0 auto;
-            padding: 8px 12px;
+        .like-btn {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 6px 12px;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
         }
 
-        .btn-favorite:hover { background: #FFE5E5; }
-        .btn-favorite.active { background: var(--primary); color: white; }
+        .like-btn:hover {
+            border-color: #ff4757;
+            color: #ff4757;
+        }
 
-        /* Lightbox */
+        .like-btn.liked {
+            border-color: #ff4757;
+            background: #fff5f5;
+            color: #ff4757;
+        }
+
+        .like-icon { font-size: 1rem; }
+        .like-count { font-weight: 600; min-width: 16px; }
+
         .lightbox {
             position: fixed;
             top: 0;
@@ -426,7 +459,6 @@
             font-size: 0.95rem;
         }
 
-        /* Toast */
         .toast {
             position: fixed;
             bottom: 30px;
@@ -446,8 +478,8 @@
 
         .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
         .toast.error { background: #FF6B6B; }
+        .toast.info { background: #555; }
 
-        /* Empty */
         .empty-state {
             text-align: center;
             padding: 60px 20px;
@@ -456,7 +488,6 @@
 
         .empty-state-icon { font-size: 3.5rem; margin-bottom: 12px; }
 
-        /* Footer */
         .footer {
             text-align: center;
             padding: 30px 20px;
@@ -492,50 +523,25 @@
                 <select class="filter-select" id="categorySelect">
                     <option value="">全部分类</option>
                     <optgroup label="用途">
-                        <option value="profile-avatar">头像 / Avatar</option>
+                        <option value="profile-avatar">头像</option>
                         <option value="social-media">社交媒体</option>
-                        <option value="infographic">信息图 / Edu</option>
-                        <option value="youtube-thumbnail">YouTube缩略图</option>
-                        <option value="comic-storyboard">漫画 / 分镜</option>
-                        <option value="product-marketing">产品营销</option>
-                        <option value="ecommerce">电商主图</option>
-                        <option value="game-asset">游戏素材</option>
-                        <option value="poster-flyer">海报 / 传单</option>
-                        <option value="app-design">App / 网页设计</option>
+                        <option value="infographic">信息图</option>
                         <option value="one-pager">One Pager</option>
+                        <option value="game-asset">游戏素材</option>
+                        <option value="ecommerce">电商主图</option>
                     </optgroup>
                     <optgroup label="风格">
                         <option value="photography">摄影</option>
-                        <option value="cinematic">电影 / 剧照</option>
                         <option value="anime">动漫</option>
                         <option value="illustration">插画</option>
-                        <option value="sketch">素描 / 线稿</option>
                         <option value="3d-render">3D渲染</option>
-                        <option value="chibi">Q版</option>
-                        <option value="isometric">等距视角</option>
-                        <option value="pixel-art">像素画</option>
-                        <option value="oil-painting">油画</option>
-                        <option value="watercolor">水彩</option>
-                        <option value="ink-style">水墨 / 中国风</option>
-                        <option value="retro">复古</option>
-                        <option value="cyberpunk">赛博朋克</option>
-                        <option value="minimalism">极简</option>
+                        <option value="cinematic">电影</option>
                     </optgroup>
                     <optgroup label="主题">
-                        <option value="portrait">人像 / 自拍</option>
-                        <option value="influencer">网红 / 模特</option>
-                        <option value="character">角色</option>
+                        <option value="portrait">人像</option>
                         <option value="product">产品</option>
                         <option value="food">美食</option>
-                        <option value="fashion">时尚单品</option>
-                        <option value="animal">动物 / 生物</option>
-                        <option value="vehicle">交通工具</option>
-                        <option value="architecture">建筑 / 室内</option>
-                        <option value="landscape">风景 / 自然</option>
-                        <option value="cityscape">城市 / 街景</option>
-                        <option value="diagram">图表</option>
-                        <option value="typography">文字 / 排版</option>
-                        <option value="abstract">抽象 / 背景</option>
+                        <option value="landscape">风景</option>
                     </optgroup>
                 </select>
                 <select class="filter-select" id="languageSelect">
@@ -544,17 +550,8 @@
                     <option value="EN">🇺🇸 English</option>
                     <option value="JA">🇯🇵 日本語</option>
                     <option value="DE">🇩🇪 Deutsch</option>
-                    <option value="KO">🇰🇷 한국어</option>
-                    <option value="TH">🇹🇭 ไทย</option>
-                    <option value="VI">🇻🇳 Tiếng Việt</option>
-                    <option value="HI">🇮🇳 हिन्दी</option>
-                    <option value="ES">🇪🇸 Español</option>
-                    <option value="FR">🇫🇷 Français</option>
-                    <option value="IT">🇮🇹 Italiano</option>
-                    <option value="PT">🇵🇹 Português</option>
-                    <option value="TR">🇹🇷 Türkçe</option>
                 </select>
-                <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索 Prompts...">
+                <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索...">
             </div>
         </div>
     </header>
@@ -572,7 +569,6 @@
         <p>数据来源: <a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts" target="_blank">awesome-nano-banana-pro-prompts</a></p>
     </footer>
 
-    <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
         <div class="lightbox-content">
             <button class="lightbox-close" onclick="closeLightbox()">×</button>
@@ -583,76 +579,96 @@
         </div>
     </div>
 
-    <!-- Toast -->
     <div class="toast" id="toast"></div>
 
     <script src="data.js"></script>
     <script>
-        // State
-        let favorites = JSON.parse(localStorage.getItem('nanoFavorites') || '[]');
-        let currentImages = [];
-        let currentIndex = 0;
-        let activeCategory = '';
+        // Like System State
+        let userLikes = JSON.parse(localStorage.getItem('nanoUserLikes') || '[]');
+        let globalLikeCounts = JSON.parse(localStorage.getItem('nanoLikeCounts') || '{}');
+        let savedPrompts = JSON.parse(localStorage.getItem('nanoSavedPrompts') || '[]');
+        let currentImages = [], currentIndex = 0, activeCategory = '';
 
-        // DOM
         const grid = document.getElementById('promptsGrid');
-        const searchInput = document.getElementById('searchInput');
-        const languageSelect = document.getElementById('languageSelect');
-        const categorySelect = document.getElementById('categorySelect');
-        const categoryBar = document.getElementById('categoryBar');
-        const emptyState = document.getElementById('emptyState');
         const toast = document.getElementById('toast');
         const lightbox = document.getElementById('lightbox');
         const lightboxImages = document.getElementById('lightboxImages');
         const lightboxCounter = document.getElementById('lightboxCounter');
 
-        // Update stats
         document.getElementById('promptCount').textContent = prompts.length + ' 个 Prompts';
-        document.getElementById('imageCount').textContent = prompts.reduce((sum, p) => sum + p.images.length, 0) + ' 张图片';
+        document.getElementById('imageCount').textContent = prompts.reduce((s, p) => s + p.images.length, 0) + ' 张图片';
 
-        // Toast
-        function showToast(msg, isError = false) {
+        function showToast(msg, type = 'success') {
             toast.textContent = msg;
-            toast.className = 'toast' + (isError ? ' error' : '');
+            toast.className = 'toast ' + type;
             toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2000);
+            setTimeout(() => toast.classList.remove('show'), 2500);
         }
 
-        // Copy
         async function copyPrompt(text, btn) {
             try {
                 await navigator.clipboard.writeText(text);
                 btn.innerHTML = '✓ 已复制';
                 btn.classList.add('success');
-                showToast('已复制到剪贴板 ✨');
-                setTimeout(() => {
-                    btn.innerHTML = '📋 复制';
-                    btn.classList.remove('success');
-                }, 2000);
-            } catch (err) {
-                showToast('复制失败，请手动选择', true);
-            }
+                showToast('已复制 ✨');
+                setTimeout(() => { btn.innerHTML = '📋 复制'; btn.classList.remove('success'); }, 2000);
+            } catch { showToast('复制失败', 'error'); }
         }
 
-        // Favorite
-        function toggleFavorite(id, btn) {
-            const idx = favorites.indexOf(id);
-            if (idx > -1) {
-                favorites.splice(idx, 1);
-                btn.classList.remove('active');
+        function toggleLike(promptId, btn) {
+            const card = btn.closest('.card');
+            const countEl = card.querySelector('.like-count');
+            let count = parseInt(countEl.textContent) || 0;
+
+            if (userLikes.includes(promptId)) {
+                userLikes = userLikes.filter(id => id !== promptId);
+                count = Math.max(0, count - 1);
+                btn.classList.remove('liked');
+                showToast('取消点赞', 'info');
             } else {
-                favorites.push(id);
-                btn.classList.add('active');
-                showToast('已添加到收藏 💜');
+                userLikes.push(promptId);
+                count++;
+                btn.classList.add('liked');
+                showToast('❤️ ' + (count >= 3 ? '已达3次，将保存！' : '点赞 (' + count + '/3)'), count >= 3 ? 'success' : 'info');
+                if (count === 3) savePrompt(promptId);
             }
-            localStorage.setItem('nanoFavorites', JSON.stringify(favorites));
+
+            countEl.textContent = count;
+            globalLikeCounts[promptId] = count;
+            localStorage.setItem('nanoUserLikes', JSON.stringify(userLikes));
+            localStorage.setItem('nanoLikeCounts', JSON.stringify(globalLikeCounts));
+            updateSavedBadge(card, promptId);
         }
 
-        // Lightbox
+        function updateSavedBadge(card, promptId) {
+            const badge = card.querySelector('.saved-badge');
+            if (savedPrompts.includes(promptId)) badge.classList.add('show');
+            else badge.classList.remove('show');
+        }
+
+        function savePrompt(promptId) {
+            const prompt = prompts.find(p => p.id === promptId);
+            if (!prompt || savedPrompts.includes(promptId)) return;
+            savedPrompts.push(promptId);
+            localStorage.setItem('nanoSavedPrompts', JSON.stringify(savedPrompts));
+            
+            const data = JSON.stringify({ prompt, savedAt: new Date().toISOString(), likes: 3 }, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'prompt-' + promptId + '.json';
+            a.click();
+            URL.revokeObjectURL(a.href);
+            showToast('🎉 已保存 prompt-' + promptId + '.json！', 'success');
+        }
+
         function openLightbox(images, index) {
             currentImages = images;
             currentIndex = index;
-            renderLightboxImages();
+            lightboxImages.innerHTML = currentImages.map((src, i) => 
+                `<img class="lightbox-img" src="${src}" alt="Image ${i+1}">`
+            ).join('');
+            lightboxCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -664,19 +680,13 @@
 
         function lightboxNav(dir) {
             currentIndex = (currentIndex + dir + currentImages.length) % currentImages.length;
-            renderLightboxImages();
-            const img = lightboxImages.children[currentIndex];
-            if (img) img.scrollIntoView({ behavior: 'smooth', inline: 'start' });
-        }
-
-        function renderLightboxImages() {
             lightboxImages.innerHTML = currentImages.map((src, i) => 
                 `<img class="lightbox-img" src="${src}" alt="Image ${i+1}">`
             ).join('');
             lightboxCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
+            lightboxImages.children[currentIndex]?.scrollIntoView({ behavior: 'smooth', inline: 'start' });
         }
 
-        // Event listeners
         document.getElementById('lightboxPrev').onclick = () => lightboxNav(-1);
         document.getElementById('lightboxNext').onclick = () => lightboxNav(1);
         lightbox.onclick = (e) => { if (e.target === lightbox) closeLightbox(); };
@@ -687,9 +697,8 @@
             if (e.key === 'ArrowRight') lightboxNav(1);
         });
 
-        // Category bar
         function renderCategoryBar() {
-            const categories = [
+            const cats = [
                 { slug: 'profile-avatar', label: '头像' },
                 { slug: 'one-pager', label: 'One Pager' },
                 { slug: 'photography', label: '摄影' },
@@ -698,74 +707,64 @@
                 { slug: 'infographic', label: '信息图' },
                 { slug: 'product', label: '产品' },
                 { slug: '3d-render', label: '3D渲染' },
-                { slug: 'cinematic', label: '电影' },
             ];
-            
-            categoryBar.innerHTML = categories.map(c => 
+            document.getElementById('categoryBar').innerHTML = cats.map(c => 
                 `<button class="category-tag ${activeCategory === c.slug ? 'active' : ''}" data-cat="${c.slug}">${c.label}</button>`
             ).join('');
-
-            categoryBar.querySelectorAll('.category-tag').forEach(btn => {
+            document.getElementById('categoryBar').querySelectorAll('.category-tag').forEach(btn => {
                 btn.onclick = () => {
-                    const cat = btn.dataset.cat;
-                    activeCategory = activeCategory === cat ? '' : cat;
-                    categorySelect.value = activeCategory;
+                    activeCategory = activeCategory === btn.dataset.cat ? '' : btn.dataset.cat;
+                    document.getElementById('categorySelect').value = activeCategory;
                     renderCategoryBar();
                     render();
                 };
             });
         }
 
-        // Slide gallery
-        function slideGallery(gallery, direction) {
+        function slideGallery(gallery, dir) {
             const images = gallery.querySelectorAll('.gallery-image');
-            const dots = gallery.parentElement.querySelectorAll('.image-dot');
-            let activeIndex = 0;
-            images.forEach((img, i) => {
-                if (img.classList.contains('active')) activeIndex = i;
-            });
-            activeIndex = (activeIndex + direction + images.length) % images.length;
-            images[activeIndex].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+            let idx = 0;
+            images.forEach((img, i) => { if (img.classList.contains('active')) idx = i; });
+            idx = (idx + dir + images.length) % images.length;
+            images[idx].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
         }
 
-        // Create Card
         function createCard(prompt) {
-            const isFav = favorites.includes(prompt.id);
+            const isLiked = userLikes.includes(prompt.id);
+            const count = globalLikeCounts[prompt.id] || 0;
+            const isSaved = savedPrompts.includes(prompt.id);
             const imgCount = prompt.images.length;
-            const dotsHtml = prompt.images.map((_, i) => 
-                `<div class="image-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
-            ).join('');
-            const imagesHtml = prompt.images.map((src, i) => 
-                `<img class="gallery-image" src="${src}" alt="${prompt.title}" data-index="${i}">`
-            ).join('');
 
             return `
                 <article class="card" data-id="${prompt.id}">
                     <div class="card-image-container">
-                        <div class="image-gallery" id="gallery-${prompt.id}">
-                            ${imagesHtml}
+                        <div class="image-gallery">
+                            ${prompt.images.map((src, i) => 
+                                `<img class="gallery-image" src="${src}" alt="${prompt.title}">`
+                            ).join('')}
                         </div>
                         ${imgCount > 1 ? `
-                            <button class="image-nav prev" onclick="slideGallery(document.getElementById('gallery-${prompt.id}'), -1)">‹</button>
-                            <button class="image-nav next" onclick="slideGallery(document.getElementById('gallery-${prompt.id}'), 1)">›</button>
-                            <div class="image-dots">${dotsHtml}</div>
+                            <button class="image-nav prev" onclick="this.parentElement.querySelector('.image-gallery').scrollLeft-=200">‹</button>
+                            <button class="image-nav next" onclick="this.parentElement.querySelector('.image-gallery').scrollLeft+=200">›</button>
                         ` : ''}
                         <div class="image-count">📷 ${imgCount}</div>
                         <button class="preview-btn" onclick='openLightbox(${JSON.stringify(prompt.images).replace(/'/g, "&#39;")}, 0)'>🔍 预览</button>
+                        <div class="saved-badge ${isSaved ? 'show' : ''}">⭐ 已保存</div>
                     </div>
                     <div class="card-content">
                         <div class="card-tags">
-                            ${prompt.tags.map(t => `<span class="tag">#${t}</span>`).join('')}
+                            ${(prompt.tags || ['general']).map(t => `<span class="tag">#${t}</span>`).join('')}
                         </div>
                         <h3 class="card-title">${prompt.title}</h3>
-                        <p class="card-description">${prompt.description}</p>
+                        <p class="card-description">${prompt.description || ''}</p>
                         <div class="prompt-box">${prompt.prompt}</div>
-                        <div class="card-actions">
-                            <button class="btn btn-copy" onclick="copyPrompt(\`${prompt.prompt.replace(/`/g, '\\`')}\`, this)">
-                                📋 复制
-                            </button>
-                            <button class="btn btn-favorite ${isFav ? 'active' : ''}" onclick="toggleFavorite(${prompt.id}, this)">
-                                ${isFav ? '❤️' : '🤍'}
+                        <div class="action-bar">
+                            <div class="card-actions">
+                                <button class="btn btn-copy" onclick="copyPrompt(\`${prompt.prompt.replace(/`/g, '\\`')}\`, this)">📋 复制</button>
+                            </div>
+                            <button class="like-btn ${isLiked ? 'liked' : ''}" onclick="toggleLike(${prompt.id}, this)">
+                                <span class="like-icon">${isLiked ? '❤️' : '🤍'}</span>
+                                <span class="like-count">${count}</span>
                             </button>
                         </div>
                     </div>
@@ -773,65 +772,25 @@
             `;
         }
 
-        // Render
         function render() {
-            const search = searchInput.value.toLowerCase();
-            const lang = languageSelect.value;
-            
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const lang = document.getElementById('languageSelect').value;
+
             const filtered = prompts.filter(p => {
-                const matchSearch = !search || 
-                    p.title.toLowerCase().includes(search) ||
-                    p.description.toLowerCase().includes(search) ||
-                    p.prompt.toLowerCase().includes(search);
+                const matchSearch = !search || p.title.toLowerCase().includes(search) || (p.description || '').toLowerCase().includes(search) || p.prompt.toLowerCase().includes(search);
                 const matchLang = !lang || p.language === lang;
                 const matchCat = !activeCategory || (p.tags && p.tags.includes(activeCategory));
                 return matchSearch && matchLang && matchCat;
             });
 
-            if (filtered.length === 0) {
-                grid.innerHTML = '';
-                emptyState.style.display = 'block';
-            } else {
-                emptyState.style.display = 'none';
-                grid.innerHTML = filtered.map(createCard).join('');
-
-                // Setup gallery scroll
-                document.querySelectorAll('.image-gallery').forEach(gallery => {
-                    const images = gallery.querySelectorAll('.gallery-image');
-                    const dots = gallery.parentElement.querySelectorAll('.image-dot');
-
-                    gallery.addEventListener('scroll', () => {
-                        const scrollLeft = gallery.scrollLeft;
-                        const imageWidth = gallery.offsetWidth;
-                        const activeIndex = Math.round(scrollLeft / imageWidth);
-                        
-                        dots.forEach((dot, i) => dot.classList.toggle('active', i === activeIndex));
-                        images.forEach((img, i) => img.classList.toggle('active', i === activeIndex));
-                    });
-
-                    dots.forEach((dot, i) => {
-                        dot.onclick = () => images[i].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
-                    });
-                });
-            }
+            document.getElementById('emptyState').style.display = filtered.length ? 'none' : 'block';
+            grid.innerHTML = filtered.map(createCard).join('');
         }
 
-        // Debounce
-        function debounce(fn, wait) {
-            let t;
-            return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
-        }
+        document.getElementById('searchInput').oninput = () => { clearTimeout(window.searchTimer); window.searchTimer = setTimeout(render, 300); };
+        document.getElementById('languageSelect').onchange = render;
+        document.getElementById('categorySelect').onchange = () => { activeCategory = document.getElementById('categorySelect').value; renderCategoryBar(); render(); };
 
-        // Event listeners
-        searchInput.oninput = debounce(render, 300);
-        languageSelect.onchange = render;
-        categorySelect.onchange = () => {
-            activeCategory = categorySelect.value;
-            renderCategoryBar();
-            render();
-        };
-
-        // Init
         renderCategoryBar();
         render();
     </script>
