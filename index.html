@@ -22,9 +22,6 @@
             --shadow-hover: rgba(0, 0, 0, 0.15);
         }
 
-        /* ============================
-           Reset & Base
-           ============================ */
         * {
             margin: 0;
             padding: 0;
@@ -39,9 +36,7 @@
             min-height: 100vh;
         }
 
-        /* ============================
-           Header
-           ============================ */
+        /* Header */
         .header {
             position: sticky;
             top: 0;
@@ -70,9 +65,7 @@
             font-weight: 600;
         }
 
-        .logo-icon {
-            font-size: 2rem;
-        }
+        .logo-icon { font-size: 2rem; }
 
         .search-box {
             display: flex;
@@ -89,11 +82,6 @@
             font-size: 1rem;
             outline: none;
             background: rgba(255, 255, 255, 0.95);
-            color: var(--text-primary);
-        }
-
-        .search-input::placeholder {
-            color: #999;
         }
 
         .filter-select {
@@ -102,14 +90,11 @@
             border-radius: 25px;
             font-size: 0.95rem;
             background: rgba(255, 255, 255, 0.95);
-            color: var(--text-primary);
             cursor: pointer;
             outline: none;
         }
 
-        /* ============================
-           Main Content
-           ============================ */
+        /* Main Content */
         .main {
             max-width: 1400px;
             margin: 0 auto;
@@ -121,21 +106,11 @@
             column-gap: 16px;
         }
 
-        @media (max-width: 1200px) {
-            .masonry { column-count: 3; }
-        }
+        @media (max-width: 1200px) { .masonry { column-count: 3; } }
+        @media (max-width: 768px) { .masonry { column-count: 2; } }
+        @media (max-width: 480px) { .masonry { column-count: 1; } }
 
-        @media (max-width: 768px) {
-            .masonry { column-count: 2; }
-        }
-
-        @media (max-width: 480px) {
-            .masonry { column-count: 1; }
-        }
-
-        /* ============================
-           Prompt Card
-           ============================ */
+        /* Card */
         .card {
             break-inside: avoid;
             margin-bottom: 16px;
@@ -151,60 +126,96 @@
             box-shadow: 0 8px 24px var(--shadow-hover);
         }
 
+        /* Image Gallery */
         .card-image-wrapper {
             position: relative;
             background: #f5f5f5;
-            overflow: hidden;
         }
 
-        .card-image {
+        .image-gallery {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .image-gallery::-webkit-scrollbar { display: none; }
+
+        .gallery-image {
+            flex: 0 0 100%;
             width: 100%;
-            display: block;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            min-height: 200px;
+            max-height: 350px;
+            object-fit: cover;
+            scroll-snap-align: start;
+            background: #e0e0e0;
         }
 
-        .card-image.loaded {
-            opacity: 1;
-        }
-
-        .card-image-skeleton {
+        .image-nav {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.9);
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 5;
         }
 
-        .card-image.loaded + .card-image-skeleton {
-            display: none;
-        }
+        .card-image-wrapper:hover .image-nav { opacity: 1; }
+        .image-nav:hover { background: white; }
+        .image-nav.prev { left: 8px; }
+        .image-nav.next { right: 8px; }
 
-        @keyframes shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
-
-        .image-count {
+        .image-dots {
             position: absolute;
             bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 4px;
+            background: rgba(0,0,0,0.4);
+            padding: 4px 8px;
+            border-radius: 10px;
+        }
+
+        .image-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+        }
+
+        .image-dot.active {
+            background: white;
+        }
+
+        .image-count-badge {
+            position: absolute;
+            top: 8px;
             right: 8px;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0,0,0,0.6);
             color: white;
             padding: 4px 10px;
             border-radius: 12px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             display: flex;
             align-items: center;
             gap: 4px;
         }
 
-        .card-content {
-            padding: 16px;
-        }
+        /* Card Content */
+        .card-content { padding: 16px; }
 
         .card-tags {
             display: flex;
@@ -225,7 +236,6 @@
         .card-title {
             font-size: 1rem;
             font-weight: 600;
-            color: var(--text-primary);
             margin-bottom: 8px;
             line-height: 1.4;
             display: -webkit-box;
@@ -254,18 +264,11 @@
             overflow-y: auto;
             font-size: 0.85rem;
             line-height: 1.6;
-            color: var(--text-primary);
-            font-family: "SF Mono", "Monaco", "Inconsolata", monospace;
+            font-family: "SF Mono", "Monaco", monospace;
         }
 
-        .prompt-box::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        .prompt-box::-webkit-scrollbar-thumb {
-            background: #ddd;
-            border-radius: 2px;
-        }
+        .prompt-box::-webkit-scrollbar { width: 4px; }
+        .prompt-box::-webkit-scrollbar-thumb { background: #ddd; border-radius: 2px; }
 
         .card-actions {
             display: flex;
@@ -292,17 +295,9 @@
             color: white;
         }
 
-        .btn-copy:hover {
-            background: #ff5252;
-        }
-
-        .btn-copy:active {
-            transform: scale(0.95);
-        }
-
-        .btn-copy.success {
-            background: var(--success);
-        }
+        .btn-copy:hover { background: #ff5252; }
+        .btn-copy:active { transform: scale(0.95); }
+        .btn-copy.success { background: var(--success); }
 
         .btn-favorite {
             background: #FFF5F5;
@@ -311,18 +306,76 @@
             padding: 10px 14px;
         }
 
-        .btn-favorite:hover {
-            background: #FFE5E5;
+        .btn-favorite:hover { background: #FFE5E5; }
+        .btn-favorite.active { background: var(--primary); color: white; }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
         }
 
-        .btn-favorite.active {
-            background: var(--primary);
+        .lightbox.active { display: flex; }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: none;
+            border: none;
             color: white;
+            font-size: 2rem;
+            cursor: pointer;
         }
 
-        /* ============================
-           Toast Notification
-           ============================ */
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 2rem;
+            padding: 20px 15px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .lightbox-nav:hover { background: rgba(255,255,255,0.3); }
+        .lightbox-nav.prev { left: -60px; }
+        .lightbox-nav.next { right: -60px; }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* Toast */
         .toast {
             position: fixed;
             bottom: 30px;
@@ -348,31 +401,18 @@
             opacity: 1;
         }
 
-        .toast.error {
-            background: #FF6B6B;
-        }
+        .toast.error { background: #FF6B6B; }
 
-        /* ============================
-           Empty State
-           ============================ */
+        /* Empty State */
         .empty-state {
             text-align: center;
             padding: 60px 20px;
             color: var(--text-secondary);
         }
 
-        .empty-state-icon {
-            font-size: 4rem;
-            margin-bottom: 16px;
-        }
+        .empty-state-icon { font-size: 4rem; margin-bottom: 16px; }
 
-        .empty-state-text {
-            font-size: 1.2rem;
-        }
-
-        /* ============================
-           Footer
-           ============================ */
+        /* Footer */
         .footer {
             text-align: center;
             padding: 40px 20px;
@@ -385,27 +425,18 @@
             text-decoration: none;
         }
 
-        /* ============================
-           Responsive
-           ============================ */
+        /* Responsive */
         @media (max-width: 600px) {
-            .header-content {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            .search-box {
-                max-width: 100%;
-            }
-
-            .logo {
-                justify-content: center;
-            }
+            .header-content { flex-direction: column; align-items: stretch; }
+            .search-box { max-width: 100%; }
+            .logo { justify-content: center; }
+            .lightbox-nav { padding: 15px 10px; font-size: 1.5rem; }
+            .lightbox-nav.prev { left: 5px; }
+            .lightbox-nav.next { right: 5px; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="header-content">
             <div class="logo">
@@ -416,16 +447,15 @@
                 <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索 Prompts...">
                 <select class="filter-select" id="languageFilter">
                     <option value="all">全部语言</option>
-                    <option value="ZH">中文</option>
-                    <option value="EN">English</option>
-                    <option value="JA">日本語</option>
-                    <option value="DE">Deutsch</option>
+                    <option value="ZH">🇨🇳 中文</option>
+                    <option value="EN">🇺🇸 English</option>
+                    <option value="JA">🇯🇵 日本語</option>
+                    <option value="DE">🇩🇪 Deutsch</option>
                 </select>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="main">
         <div class="masonry" id="promptsGrid"></div>
         <div class="empty-state" id="emptyState" style="display: none;">
@@ -434,11 +464,21 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>数据来源: <a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts" target="_blank">awesome-nano-banana-pro-prompts</a></p>
         <p style="margin-top: 8px;">由 AI 整理 | 仅供学习使用</p>
     </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">×</button>
+            <button class="lightbox-nav prev" onclick="lightboxPrev()">‹</button>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <button class="lightbox-nav next" onclick="lightboxNext()">›</button>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+    </div>
 
     <!-- Toast -->
     <div class="toast" id="toast"></div>
@@ -447,6 +487,8 @@
     <script>
         // State
         let favorites = JSON.parse(localStorage.getItem('nanoPromptFavorites') || '[]');
+        let currentLightboxPrompt = null;
+        let currentLightboxIndex = 0;
 
         // DOM Elements
         const grid = document.getElementById('promptsGrid');
@@ -454,26 +496,19 @@
         const languageFilter = document.getElementById('languageFilter');
         const emptyState = document.getElementById('emptyState');
         const toast = document.getElementById('toast');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxCounter = document.getElementById('lightboxCounter');
 
-        // Language labels
-        const langLabels = {
-            'ZH': '🇨🇳 中文',
-            'EN': '🇺🇸 English',
-            'JA': '🇯🇵 日本語',
-            'DE': '🇩🇪 Deutsch'
-        };
-
-        // Show toast notification
+        // Show toast
         function showToast(message, isError = false) {
             toast.textContent = message;
             toast.className = 'toast' + (isError ? ' error' : '');
             toast.classList.add('show');
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 2000);
+            setTimeout(() => toast.classList.remove('show'), 2000);
         }
 
-        // Copy prompt to clipboard
+        // Copy prompt
         async function copyPrompt(prompt, btn) {
             try {
                 await navigator.clipboard.writeText(prompt);
@@ -503,33 +538,89 @@
             localStorage.setItem('nanoPromptFavorites', JSON.stringify(favorites));
         }
 
+        // Lightbox functions
+        function openLightbox(prompt, index) {
+            currentLightboxPrompt = prompt;
+            currentLightboxIndex = index;
+            updateLightboxImage();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function lightboxPrev() {
+            if (currentLightboxPrompt && currentLightboxPrompt.images.length > 1) {
+                currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxPrompt.images.length) % currentLightboxPrompt.images.length;
+                updateLightboxImage();
+            }
+        }
+
+        function lightboxNext() {
+            if (currentLightboxPrompt && currentLightboxPrompt.images.length > 1) {
+                currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxPrompt.images.length;
+                updateLightboxImage();
+            }
+        }
+
+        function updateLightboxImage() {
+            if (currentLightboxPrompt) {
+                lightboxImage.src = currentLightboxPrompt.images[currentLightboxIndex];
+                lightboxCounter.textContent = `${currentLightboxIndex + 1} / ${currentLightboxPrompt.images.length}`;
+            }
+        }
+
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') lightboxPrev();
+                if (e.key === 'ArrowRight') lightboxNext();
+            }
+        });
+
+        // Click outside to close lightbox
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
         // Create card HTML
         function createCard(prompt) {
             const isFavorite = favorites.includes(prompt.id);
-            const firstImage = prompt.images[0];
             const imageCount = prompt.images.length;
 
+            // Generate dots HTML
+            const dotsHtml = prompt.images.map((_, i) => 
+                `<div class="image-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
+            ).join('');
+
+            // Generate images HTML
+            const imagesHtml = prompt.images.map((img, i) => 
+                `<img class="gallery-image" src="${img}" alt="${prompt.title} - Image ${i + 1}" data-index="${i}">`
+            ).join('');
+
             return `
-                <article class="card">
+                <article class="card" data-id="${prompt.id}">
                     <div class="card-image-wrapper">
-                        <img 
-                            class="card-image" 
-                            data-src="${firstImage}" 
-                            alt="${prompt.title}"
-                            loading="lazy"
-                        >
-                        <div class="card-image-skeleton"></div>
-                        ${imageCount > 1 ? `
-                            <div class="image-count">
-                                <span>📷</span>
-                                <span>${imageCount}</span>
-                            </div>
+                        <div class="image-gallery" id="gallery-${prompt.id}">
+                            ${imagesHtml}
+                        </div>
+                        ${prompt.images.length > 1 ? `
+                            <button class="image-nav prev" onclick="slideGallery('${prompt.id}', -1)">‹</button>
+                            <button class="image-nav next" onclick="slideGallery('${prompt.id}', 1)">›</button>
+                            <div class="image-dots">${dotsHtml}</div>
                         ` : ''}
+                        <div class="image-count-badge">📷 ${imageCount}</div>
+                        <div class="image-count-badge" style="top:8px;left:8px;right:auto;">
+                            <span style="cursor:pointer" onclick="openLightbox(prompts.find(p=>p.id===${prompt.id}), 0)">🔍 点击预览</span>
+                        </div>
                     </div>
                     <div class="card-content">
                         <div class="card-tags">
                             ${prompt.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}
-                            <span class="tag">${langLabels[prompt.language] || prompt.language}</span>
                         </div>
                         <h3 class="card-title">${prompt.title}</h3>
                         <p class="card-description">${prompt.description}</p>
@@ -545,6 +636,26 @@
                     </div>
                 </article>
             `;
+        }
+
+        // Slide gallery
+        function slideGallery(galleryId, direction) {
+            const gallery = document.getElementById(`gallery-${galleryId}`);
+            const images = gallery.querySelectorAll('.gallery-image');
+            const dots = gallery.parentElement.querySelectorAll('.image-dot');
+            const currentIndex = Array.from(images).findIndex(img => img.src === img.src); // This won't work properly
+            
+            // Find active image
+            let activeIndex = 0;
+            images.forEach((img, i) => {
+                if (img.classList.contains('active')) activeIndex = i;
+            });
+
+            // Update active index
+            activeIndex = (activeIndex + direction + images.length) % images.length;
+            
+            // Scroll to image
+            images[activeIndex].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
         }
 
         // Render prompts
@@ -567,32 +678,53 @@
             } else {
                 emptyState.style.display = 'none';
                 grid.innerHTML = filtered.map(createCard).join('');
-                
-                // Setup lazy loading for images
-                document.querySelectorAll('.card-image').forEach(img => {
-                    img.onload = () => img.classList.add('loaded');
-                    img.onerror = () => {
-                        img.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect fill="%23f0f0f0" width="200" height="200"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23999" font-size="14">图片加载失败</text></svg>';
-                        img.classList.add('loaded');
-                    };
-                    // Trigger load if already cached
-                    if (img.complete) {
-                        img.classList.add('loaded');
-                    }
+
+                // Setup gallery navigation
+                document.querySelectorAll('.image-gallery').forEach(gallery => {
+                    const images = gallery.querySelectorAll('.gallery-image');
+                    const dots = gallery.parentElement.querySelectorAll('.image-dot');
+
+                    // Handle scroll
+                    gallery.addEventListener('scroll', () => {
+                        const scrollLeft = gallery.scrollLeft;
+                        const imageWidth = gallery.offsetWidth;
+                        const activeIndex = Math.round(scrollLeft / imageWidth);
+                        
+                        dots.forEach((dot, i) => {
+                            dot.classList.toggle('active', i === activeIndex);
+                        });
+                        images.forEach((img, i) => {
+                            img.classList.toggle('active', i === activeIndex);
+                        });
+                    });
+
+                    // Handle dot click
+                    dots.forEach((dot, i) => {
+                        dot.addEventListener('click', () => {
+                            images[i].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+                        });
+                    });
+
+                    // Click image to open lightbox
+                    images.forEach((img, i) => {
+                        img.style.cursor = 'pointer';
+                        img.addEventListener('click', () => {
+                            const card = gallery.closest('.card');
+                            const id = parseInt(card.dataset.id);
+                            const prompt = prompts.find(p => p.id === id);
+                            openLightbox(prompt, i);
+                        });
+                    });
                 });
             }
         }
 
-        // Debounce function
+        // Debounce
         function debounce(func, wait) {
             let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
+            return function(...args) {
                 clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
+                timeout = setTimeout(() => func.apply(this, args), wait);
             };
         }
 
