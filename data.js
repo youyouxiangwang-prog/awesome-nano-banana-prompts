@@ -27,8 +27,8 @@ const prompts = [
     "description": "Create an Infographics with bento grid 8 module layout, user can specify any product name in Food, Medicine, tech etc category, choose language, Background style, Hero grid style",
     "prompt": "Input Variable: [insert product name]\nLanguage: [insert language]\n\nSystem Instruction:\nCreate an image of premium liquid glass Bento grid product infographic with 8 modules (card 2 to 8 show text titles only).\n1) Product Analysis:\n→ Identify product's dominant natural color → \"hero color\"\n→ Identify category: FOOD / MEDICINE / TECH\n2) Color Palette (derived from hero):\n→ Product + accents: full saturation hero color\n→ Icons, borders: muted hero (30-40% saturation, never black)\n3) Visual Style:\n→ Hero product: real photography (authentic, premium), 3D Glass version [choose one]\n→ Cards: Apple liquid glass (85-90% transparent) with Whisper-thin borders and Subtle drop shadow for floating depth and reflecting the background color\n→ Background stays behind cards and high blur where cards are [choose one]:\n  - Ethereal: product essence, light caustics, abstract glow\n  - Macro: product texture close-up, heavily blurred\n  - Pattern: product repeated softly at 10-15% opacity\n  - Context: relevant environment, blurred + desaturated\n→ Add subtle motion effect\n→ Asymmetric Bento grid, 16:9 landscape\n→ Hero card: 28-30% | Info modules: 70-72%\n4) Module Content (8 Cards):\nM1 — Hero: Product displayed as real photo / 3D glass / stylized interpretation (choose one)in beautiful form + product name label\nM2 — Core Benefits: 4 unique benefits + hero-color icons\nM3 — How to Use: 4 usage methods + icons\nM4 — Key Metrics: 5 EXACT data points\nFormat: [icon] [Label] [Bold Value] [Unit]\nFOOD: Calories: [X] kcal/100g, Carbs: [X]g (fiber [X]g, sugar [X]g), Protein: [X]g, [Key Vitamin]: [X]mg ([X]% DV), [Key Mineral]: [X]mg ([X]% DV)\nMEDICINE:Active: [name], Strength: [X] mg, Onset: [X] min, Duration: [X] hrs, Half-life: [X] hrs \nTECH:Chip: [model], Battery: [X] hrs, Weight: [X]g,[Key spec]: [value], Connectivity: [protocols]\nM5 — Who It's For: 4 recommended groups with green checkmark icons | 3 caution groups with amber warning icons\nM6 — Important Notes: 4 precautions + warning icons\nM7 — Quick Reference:\n→ FOOD: Glycemic Index + dietary tags with icons\n→ MEDICINE: Side effects + severity with icons\n→ TECH: Compatibility + certifications with icons\nM8 — Did You Know: 3 facts (origin, science, global stat) + icons\nOutput: 1 image, 16:9 landscape, ultra-premium liquid glass infographic.",
     "images": [
-      "https://cms-assets.youmind.com/media/1768962051381_l9uih4_537980579-6f29d32a-c786-40c4-bd5a-79c640737496.png",
-      "https://cms-assets.youmind.com/media/1768962076321_nu4c5q_537981099-d18d0e38-f7ac-4781-a5da-6d68e2380885.png"
+      "https://cms-assets.youmind.com/media/1768962051381_l9uih4_537980579-6f29d32a-c786-40c4-bd5a-79c640737496.jpg",
+      "https://cms-assets.youmind.com/media/1768962076321_nu4c5q_537981099-d18d0e38-f7ac-4781-a5da-6d68e2380885.jpg"
     ],
     "tags": [
       "general"
@@ -2099,7 +2099,7 @@ const prompts = [
     "description": "Meeting summary infographic for stock trading strategy under diverging market sentiment.",
     "prompt": "Trading market analysis meeting summary infographic with sentiment indicators, sector rotation map, and actionable playbook.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/01_%E7%9B%98%E9%9D%A2%E5%AE%9E%E6%88%98%EF%BC%9A%E6%83%85%E7%BB%AA%E5%88%86%E5%8C%96%E4%B8%8B%E7%9A%84%E9%80%89%E8%82%A1%E4%B8%8E%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/01_%E7%9B%98%E9%9D%A2%E5%AE%9E%E6%88%98%EF%BC%9A%E6%83%85%E7%BB%AA%E5%88%86%E5%8C%96%E4%B8%8B%E7%9A%84%E9%80%89%E8%82%A1%E4%B8%8E%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2112,7 +2112,7 @@ const prompts = [
     "description": "Meeting summary infographic covering iOS app submission, hardware connectivity, and candidate interview discussion.",
     "prompt": "HR interview debrief infographic with candidate snapshot, competency radar, and decision badge.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/02_iOS%E4%B8%8A%E6%9E%B6%E3%80%81%E7%A1%AC%E4%BB%B6%E8%BF%9E%E9%80%9A%E4%B8%8E%E5%80%99%E9%80%89%E4%BA%BA%E9%9D%A2%E8%AF%95%E8%AF%A6%E8%B0%88.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/02_iOS%E4%B8%8A%E6%9E%B6%E3%80%81%E7%A1%AC%E4%BB%B6%E8%BF%9E%E9%80%9A%E4%B8%8E%E5%80%99%E9%80%89%E4%BA%BA%E9%9D%A2%E8%AF%95%E8%AF%A6%E8%B0%88.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2125,7 +2125,7 @@ const prompts = [
     "description": "Meeting summary infographic for A-share market analysis under geopolitical conflicts.",
     "prompt": "Stock market analysis infographic with sector highlights, trading strategy, and risk management tips.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/03_%E5%9C%B0%E7%BC%98%E5%86%B2%E7%AA%81%E4%B8%8B%E7%9A%84A%E8%82%A1%E7%9B%98%E9%9D%A2%E8%A7%A3%E8%AF%BB%E4%B8%8E%E5%8F%AF%E6%93%8D%E4%BD%9C%E6%96%B9%E5%90%91.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/03_%E5%9C%B0%E7%BC%98%E5%86%B2%E7%AA%81%E4%B8%8B%E7%9A%84A%E8%82%A1%E7%9B%98%E9%9D%A2%E8%A7%A3%E8%AF%BB%E4%B8%8E%E5%8F%AF%E6%93%8D%E4%BD%9C%E6%96%B9%E5%90%91.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2138,7 +2138,7 @@ const prompts = [
     "description": "Meeting summary infographic for hardware mass production decisions covering storage, supply chain, and audio calibration.",
     "prompt": "Product hardware meeting summary with timeline, milestone tracker, and action items.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/04_%E5%AD%98%E5%82%A8%E3%80%81%E4%BE%9B%E5%BA%94%E4%B8%8E%E9%9F%B3%E9%A2%91%E8%B0%83%E6%A0%A1%EF%BC%9A%E9%87%8F%E4%BA%A7%E5%86%B3%E7%AD%96%E4%BC%9A.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/04_%E5%AD%98%E5%82%A8%E3%80%81%E4%BE%9B%E5%BA%94%E4%B8%8E%E9%9F%B3%E9%A2%91%E8%B0%83%E6%A0%A1%EF%BC%9A%E9%87%8F%E4%BA%A7%E5%86%B3%E7%AD%96%E4%BC%9A.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2151,7 +2151,7 @@ const prompts = [
     "description": "Meeting summary infographic for senior product manager interview covering hardware to AI career pivot and startup aspirations.",
     "prompt": "Interview debrief with candidate background, experience highlights, and startup interest assessment.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/05_%E8%B5%84%E6%B7%B1%E4%BA%A7%E5%93%81%E4%BA%BA%E9%9D%A2%E8%B0%88%EF%BC%9A%E4%BB%8E%E7%A1%AC%E4%BB%B6%E5%88%B0AI%E7%9A%84%E5%A4%8D%E7%9B%98%E4%B8%8E%E5%88%9B%E4%B8%9A%E6%84%8F%E5%90%91.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/05_%E8%B5%84%E6%B7%B1%E4%BA%A7%E5%93%81%E4%BA%BA%E9%9D%A2%E8%B0%88%EF%BC%9A%E4%BB%8E%E7%A1%AC%E4%BB%B6%E5%88%B0AI%E7%9A%84%E5%A4%8D%E7%9B%98%E4%B8%8E%E5%88%9B%E4%B8%9A%E6%84%8F%E5%90%91.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2164,7 +2164,7 @@ const prompts = [
     "description": "Meeting summary infographic for English vocabulary lesson covering word meanings and practice exercises.",
     "prompt": "Education coaching infographic with vocabulary, formulas, and homework tasks.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/06_%E8%8B%B1%E8%AF%AD%E8%AF%BE%E5%A0%82%EF%BC%9A%E8%AF%8D%E4%B9%89%E8%AE%B2%E8%A7%A3%E4%B8%8E%E7%BB%83%E4%B9%A0%E7%89%87%E6%AE%B5.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/06_%E8%8B%B1%E8%AF%AD%E8%AF%BE%E5%A0%82%EF%BC%9A%E8%AF%8D%E4%B9%89%E8%AE%B2%E8%A7%A3%E4%B8%8E%E7%BB%83%E4%B9%A0%E7%89%87%E6%AE%B5.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "EN",
@@ -2177,7 +2177,7 @@ const prompts = [
     "description": "Meeting summary infographic for CAT4 test preparation covering figure reasoning and vocabulary training.",
     "prompt": "Education tutoring infographic with learning objectives, key concepts, and practice tasks.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/07_CAT4%E6%A8%A1%E8%80%83%E8%BE%85%E5%AF%BC%EF%BC%9A%E5%9B%BE%E5%BD%A2%E6%8E%A8%E7%90%86%E4%B8%8E%E8%AF%8D%E6%B1%87%E7%8E%B0%E5%9C%BA%E8%AE%AD%E7%BB%83.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/07_CAT4%E6%A8%A1%E8%80%83%E8%BE%85%E5%AF%BC%EF%BC%9A%E5%9B%BE%E5%BD%A2%E6%8E%A8%E7%90%86%E4%B8%8E%E8%AF%8D%E6%B1%87%E7%8E%B0%E5%9C%BA%E8%AE%AD%E7%BB%83.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2190,7 +2190,7 @@ const prompts = [
     "description": "Meeting summary infographic for CDNIS interview coaching session with practical strategies.",
     "prompt": "School interview preparation infographic with key guidance, talking points, and action items.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/08_CDNIS%20Interview%20Coaching%20for%20Angela.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/08_CDNIS%20Interview%20Coaching%20for%20Angela.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "EN",
@@ -2203,7 +2203,7 @@ const prompts = [
     "description": "Short audio transcription meeting summary infographic.",
     "prompt": "Brief meeting summary infographic for audio transcription content.",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/09_%E7%AE%80%E7%9F%AD%E8%AF%AD%E9%9F%B3%E5%BD%95%E5%85%A5%EF%BC%9A%E6%95%B0%E5%AD%97%E4%B8%B2%E4%B8%8E%E4%B8%80%E5%8F%A5%E2%80%9C%E5%90%8E%E7%BB%AD%E6%98%AF%E5%90%A7%EF%BC%9F%E2%80%9D.png"
+      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/09_%E7%AE%80%E7%9F%AD%E8%AF%AD%E9%9F%B3%E5%BD%95%E5%85%A5%EF%BC%9A%E6%95%B0%E5%AD%97%E4%B8%B2%E4%B8%8E%E4%B8%80%E5%8F%A5%E2%80%9C%E5%90%8E%E7%BB%AD%E6%98%AF%E5%90%A7%EF%BC%9F%E2%80%9D.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
