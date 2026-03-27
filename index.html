@@ -30,53 +30,65 @@
             top: 0;
             z-index: 100;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            padding: 20px;
+            padding: 16px 20px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
 
         .header-content {
             max-width: 1400px;
             margin: 0 auto;
+        }
+
+        .logo-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 16px;
+            margin-bottom: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 600;
         }
 
-        .logo-icon { font-size: 2rem; }
+        .logo-icon { font-size: 1.8rem; }
 
-        .search-box {
+        .stats {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.85rem;
+        }
+
+        .stats span { margin-left: 12px; }
+
+        /* Filter Row */
+        .filter-row {
             display: flex;
-            gap: 8px;
-            flex: 1;
-            max-width: 400px;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .filter-select {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.95);
+            cursor: pointer;
+            outline: none;
+            min-width: 140px;
         }
 
         .search-input {
             flex: 1;
-            padding: 12px 16px;
+            min-width: 200px;
+            padding: 10px 16px;
             border: none;
-            border-radius: 25px;
-            font-size: 1rem;
-            outline: none;
-        }
-
-        .filter-select {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 25px;
-            font-size: 0.95rem;
-            cursor: pointer;
+            border-radius: 20px;
+            font-size: 0.9rem;
             outline: none;
         }
 
@@ -84,7 +96,7 @@
         .main {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 24px 16px;
+            padding: 20px 16px;
         }
 
         .masonry {
@@ -95,6 +107,38 @@
         @media (max-width: 1200px) { .masonry { column-count: 3; } }
         @media (max-width: 768px) { .masonry { column-count: 2; } }
         @media (max-width: 480px) { .masonry { column-count: 1; } }
+
+        /* Category Tags Bar */
+        .category-bar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 12px 0;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .category-tag {
+            padding: 6px 14px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .category-tag:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .category-tag.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+        }
 
         /* Card */
         .card {
@@ -112,58 +156,80 @@
             box-shadow: 0 8px 24px rgba(0,0,0,0.15);
         }
 
-        /* Image Area */
+        /* Image Gallery */
         .card-image-container {
             position: relative;
             width: 100%;
-            height: 200px;
-            background: #f0f0f0;
+            min-height: 180px;
+            background: #f5f5f5;
             overflow: hidden;
         }
 
-        .card-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .card-image.loaded {
-            opacity: 1;
-        }
-
-        .card-image.loading {
-            opacity: 0;
-        }
-
-        /* Placeholder shimmer animation */
-        .image-placeholder {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
+        .image-gallery {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 2rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            height: 200px;
         }
 
-        .image-placeholder.hidden { display: none; }
+        .image-gallery::-webkit-scrollbar { display: none; }
 
-        @keyframes shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
+        .gallery-image {
+            flex: 0 0 100%;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            scroll-snap-align: start;
         }
 
-        .image-badge {
+        .image-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.9);
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 5;
+        }
+
+        .card-image-container:hover .image-nav { opacity: 1; }
+        .image-nav:hover { background: white; }
+        .image-nav.prev { left: 8px; }
+        .image-nav.next { right: 8px; }
+
+        .image-dots {
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 4px;
+            background: rgba(0,0,0,0.5);
+            padding: 4px 8px;
+            border-radius: 10px;
+        }
+
+        .image-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+        }
+
+        .image-dot.active { background: white; }
+
+        .image-count {
             position: absolute;
             top: 8px;
-            right: 8px;
+            left: 8px;
             background: rgba(0,0,0,0.6);
             color: white;
             padding: 4px 10px;
@@ -176,48 +242,42 @@
 
         .preview-btn {
             position: absolute;
-            bottom: 8px;
+            top: 8px;
             right: 8px;
             background: rgba(255,255,255,0.95);
             border: none;
-            padding: 6px 12px;
-            border-radius: 16px;
-            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
             cursor: pointer;
             display: flex;
             align-items: center;
             gap: 4px;
-            transition: all 0.2s;
-        }
-
-        .preview-btn:hover {
-            background: white;
-            transform: scale(1.05);
         }
 
         /* Card Content */
-        .card-content { padding: 16px; }
+        .card-content { padding: 14px; }
 
         .card-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
-            margin-bottom: 12px;
+            gap: 5px;
+            margin-bottom: 10px;
         }
 
         .tag {
-            padding: 4px 10px;
+            padding: 3px 8px;
             background: #FFF0F0;
             color: var(--primary);
-            border-radius: 12px;
-            font-size: 0.75rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
             font-weight: 500;
         }
 
         .card-title {
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 600;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -226,25 +286,25 @@
         }
 
         .card-description {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-secondary);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             line-height: 1.5;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
 
         .prompt-box {
             background: #F8F8F8;
-            border-radius: 10px;
-            padding: 12px;
-            margin-bottom: 12px;
-            max-height: 100px;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            max-height: 80px;
             overflow-y: auto;
-            font-size: 0.85rem;
-            line-height: 1.6;
+            font-size: 0.8rem;
+            line-height: 1.5;
             font-family: "SF Mono", "Monaco", monospace;
         }
 
@@ -258,24 +318,20 @@
 
         .btn {
             flex: 1;
-            padding: 10px 16px;
+            padding: 8px 12px;
             border: none;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            border-radius: 16px;
+            font-size: 0.85rem;
             font-weight: 500;
             cursor: pointer;
             transition: all 0.2s ease;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
+            gap: 5px;
         }
 
-        .btn-copy {
-            background: var(--primary);
-            color: white;
-        }
-
+        .btn-copy { background: var(--primary); color: white; }
         .btn-copy:hover { background: #ff5252; }
         .btn-copy:active { transform: scale(0.95); }
         .btn-copy.success { background: var(--success); }
@@ -284,7 +340,7 @@
             background: #FFF5F5;
             color: var(--primary);
             flex: 0 0 auto;
-            padding: 10px 14px;
+            padding: 8px 12px;
         }
 
         .btn-favorite:hover { background: #FFE5E5; }
@@ -308,8 +364,8 @@
 
         .lightbox-content {
             position: relative;
-            max-width: 90%;
-            max-height: 90%;
+            max-width: 95%;
+            max-height: 95%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -322,7 +378,7 @@
             background: none;
             border: none;
             color: white;
-            font-size: 3rem;
+            font-size: 2.5rem;
             cursor: pointer;
             line-height: 1;
         }
@@ -353,21 +409,21 @@
             background: rgba(255,255,255,0.2);
             border: none;
             color: white;
-            font-size: 3rem;
-            padding: 20px;
+            font-size: 2.5rem;
+            padding: 15px;
             cursor: pointer;
             border-radius: 8px;
             line-height: 1;
         }
 
         .lightbox-nav:hover { background: rgba(255,255,255,0.3); }
-        .lightbox-nav.prev { left: -80px; }
-        .lightbox-nav.next { right: -80px; }
+        .lightbox-nav.prev { left: -70px; }
+        .lightbox-nav.next { right: -70px; }
 
         .lightbox-counter {
             color: white;
-            margin-top: 16px;
-            font-size: 1rem;
+            margin-top: 12px;
+            font-size: 0.95rem;
         }
 
         /* Toast */
@@ -378,9 +434,9 @@
             transform: translateX(-50%) translateY(100px);
             background: var(--success);
             color: white;
-            padding: 14px 28px;
-            border-radius: 25px;
-            font-size: 1rem;
+            padding: 12px 24px;
+            border-radius: 20px;
+            font-size: 0.95rem;
             font-weight: 500;
             box-shadow: 0 4px 20px rgba(0,0,0,0.2);
             z-index: 1000;
@@ -398,46 +454,112 @@
             color: var(--text-secondary);
         }
 
-        .empty-state-icon { font-size: 4rem; margin-bottom: 16px; }
+        .empty-state-icon { font-size: 3.5rem; margin-bottom: 12px; }
 
         /* Footer */
         .footer {
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 20px;
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .footer a { color: var(--primary); text-decoration: none; }
 
         @media (max-width: 768px) {
-            .lightbox-nav { padding: 10px; font-size: 2rem; }
-            .lightbox-nav.prev { left: 10px; }
-            .lightbox-nav.next { right: 10px; }
+            .lightbox-nav { padding: 10px; font-size: 1.8rem; }
+            .lightbox-nav.prev { left: 5px; }
+            .lightbox-nav.next { right: 5px; }
+            .filter-row { flex-direction: column; }
+            .filter-select, .search-input { width: 100%; min-width: unset; }
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="header-content">
-            <div class="logo">
-                <span class="logo-icon">🍌</span>
-                <span>Nano Banana Pro Prompts</span>
+            <div class="logo-row">
+                <div class="logo">
+                    <span class="logo-icon">🍌</span>
+                    <span>Nano Banana Pro Prompts</span>
+                </div>
+                <div class="stats">
+                    <span id="promptCount">128 个 Prompts</span>
+                    <span id="imageCount">261 张图片</span>
+                </div>
             </div>
-            <div class="search-box">
-                <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索...">
-                <select class="filter-select" id="languageFilter">
-                    <option value="all">全部语言</option>
+            <div class="filter-row">
+                <select class="filter-select" id="categorySelect">
+                    <option value="">全部分类</option>
+                    <optgroup label="用途">
+                        <option value="profile-avatar">头像 / Avatar</option>
+                        <option value="social-media">社交媒体</option>
+                        <option value="infographic">信息图 / Edu</option>
+                        <option value="youtube-thumbnail">YouTube缩略图</option>
+                        <option value="comic-storyboard">漫画 / 分镜</option>
+                        <option value="product-marketing">产品营销</option>
+                        <option value="ecommerce">电商主图</option>
+                        <option value="game-asset">游戏素材</option>
+                        <option value="poster-flyer">海报 / 传单</option>
+                        <option value="app-design">App / 网页设计</option>
+                    </optgroup>
+                    <optgroup label="风格">
+                        <option value="photography">摄影</option>
+                        <option value="cinematic">电影 / 剧照</option>
+                        <option value="anime">动漫</option>
+                        <option value="illustration">插画</option>
+                        <option value="sketch">素描 / 线稿</option>
+                        <option value="3d-render">3D渲染</option>
+                        <option value="chibi">Q版</option>
+                        <option value="isometric">等距视角</option>
+                        <option value="pixel-art">像素画</option>
+                        <option value="oil-painting">油画</option>
+                        <option value="watercolor">水彩</option>
+                        <option value="ink-style">水墨 / 中国风</option>
+                        <option value="retro">复古</option>
+                        <option value="cyberpunk">赛博朋克</option>
+                        <option value="minimalism">极简</option>
+                    </optgroup>
+                    <optgroup label="主题">
+                        <option value="portrait">人像 / 自拍</option>
+                        <option value="influencer">网红 / 模特</option>
+                        <option value="character">角色</option>
+                        <option value="product">产品</option>
+                        <option value="food">美食</option>
+                        <option value="fashion">时尚单品</option>
+                        <option value="animal">动物 / 生物</option>
+                        <option value="vehicle">交通工具</option>
+                        <option value="architecture">建筑 / 室内</option>
+                        <option value="landscape">风景 / 自然</option>
+                        <option value="cityscape">城市 / 街景</option>
+                        <option value="diagram">图表</option>
+                        <option value="typography">文字 / 排版</option>
+                        <option value="abstract">抽象 / 背景</option>
+                    </optgroup>
+                </select>
+                <select class="filter-select" id="languageSelect">
+                    <option value="">全部语言</option>
                     <option value="ZH">🇨🇳 中文</option>
                     <option value="EN">🇺🇸 English</option>
                     <option value="JA">🇯🇵 日本語</option>
                     <option value="DE">🇩🇪 Deutsch</option>
+                    <option value="KO">🇰🇷 한국어</option>
+                    <option value="TH">🇹🇭 ไทย</option>
+                    <option value="VI">🇻🇳 Tiếng Việt</option>
+                    <option value="HI">🇮🇳 हिन्दी</option>
+                    <option value="ES">🇪🇸 Español</option>
+                    <option value="FR">🇫🇷 Français</option>
+                    <option value="IT">🇮🇹 Italiano</option>
+                    <option value="PT">🇵🇹 Português</option>
+                    <option value="TR">🇹🇷 Türkçe</option>
                 </select>
+                <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索 Prompts...">
             </div>
         </div>
     </header>
 
     <main class="main">
+        <div class="category-bar" id="categoryBar"></div>
         <div class="masonry" id="promptsGrid"></div>
         <div class="empty-state" id="emptyState" style="display: none;">
             <div class="empty-state-icon">🔍</div>
@@ -469,16 +591,23 @@
         let favorites = JSON.parse(localStorage.getItem('nanoFavorites') || '[]');
         let currentImages = [];
         let currentIndex = 0;
+        let activeCategory = '';
 
         // DOM
         const grid = document.getElementById('promptsGrid');
         const searchInput = document.getElementById('searchInput');
-        const languageFilter = document.getElementById('languageFilter');
+        const languageSelect = document.getElementById('languageSelect');
+        const categorySelect = document.getElementById('categorySelect');
+        const categoryBar = document.getElementById('categoryBar');
         const emptyState = document.getElementById('emptyState');
         const toast = document.getElementById('toast');
         const lightbox = document.getElementById('lightbox');
         const lightboxImages = document.getElementById('lightboxImages');
         const lightboxCounter = document.getElementById('lightboxCounter');
+
+        // Update stats
+        document.getElementById('promptCount').textContent = prompts.length + ' 个 Prompts';
+        document.getElementById('imageCount').textContent = prompts.reduce((sum, p) => sum + p.images.length, 0) + ' 张图片';
 
         // Toast
         function showToast(msg, isError = false) {
@@ -535,14 +664,13 @@
         function lightboxNav(dir) {
             currentIndex = (currentIndex + dir + currentImages.length) % currentImages.length;
             renderLightboxImages();
-            // Scroll to current image
             const img = lightboxImages.children[currentIndex];
             if (img) img.scrollIntoView({ behavior: 'smooth', inline: 'start' });
         }
 
         function renderLightboxImages() {
             lightboxImages.innerHTML = currentImages.map((src, i) => 
-                `<img class="lightbox-img" src="${src}" alt="Image ${i+1}" >`
+                `<img class="lightbox-img" src="${src}" alt="Image ${i+1}">`
             ).join('');
             lightboxCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
         }
@@ -551,7 +679,6 @@
         document.getElementById('lightboxPrev').onclick = () => lightboxNav(-1);
         document.getElementById('lightboxNext').onclick = () => lightboxNav(1);
         lightbox.onclick = (e) => { if (e.target === lightbox) closeLightbox(); };
-        
         document.addEventListener('keydown', (e) => {
             if (!lightbox.classList.contains('active')) return;
             if (e.key === 'Escape') closeLightbox();
@@ -559,28 +686,72 @@
             if (e.key === 'ArrowRight') lightboxNav(1);
         });
 
+        // Category bar
+        function renderCategoryBar() {
+            const categories = [
+                { slug: 'profile-avatar', label: '头像' },
+                { slug: 'photography', label: '摄影' },
+                { slug: 'portrait', label: '人像' },
+                { slug: 'anime', label: '动漫' },
+                { slug: 'illustration', label: '插画' },
+                { slug: 'infographic', label: '信息图' },
+                { slug: 'product', label: '产品' },
+                { slug: '3d-render', label: '3D渲染' },
+                { slug: 'cinematic', label: '电影' },
+                { slug: 'game-asset', label: '游戏' },
+            ];
+            
+            categoryBar.innerHTML = categories.map(c => 
+                `<button class="category-tag ${activeCategory === c.slug ? 'active' : ''}" data-cat="${c.slug}">${c.label}</button>`
+            ).join('');
+
+            categoryBar.querySelectorAll('.category-tag').forEach(btn => {
+                btn.onclick = () => {
+                    const cat = btn.dataset.cat;
+                    activeCategory = activeCategory === cat ? '' : cat;
+                    categorySelect.value = activeCategory;
+                    renderCategoryBar();
+                    render();
+                };
+            });
+        }
+
+        // Slide gallery
+        function slideGallery(gallery, direction) {
+            const images = gallery.querySelectorAll('.gallery-image');
+            const dots = gallery.parentElement.querySelectorAll('.image-dot');
+            let activeIndex = 0;
+            images.forEach((img, i) => {
+                if (img.classList.contains('active')) activeIndex = i;
+            });
+            activeIndex = (activeIndex + direction + images.length) % images.length;
+            images[activeIndex].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+        }
+
         // Create Card
         function createCard(prompt) {
             const isFav = favorites.includes(prompt.id);
-            const firstImg = prompt.images[0];
             const imgCount = prompt.images.length;
+            const dotsHtml = prompt.images.map((_, i) => 
+                `<div class="image-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
+            ).join('');
+            const imagesHtml = prompt.images.map((src, i) => 
+                `<img class="gallery-image" src="${src}" alt="${prompt.title}" data-index="${i}">`
+            ).join('');
 
             return `
                 <article class="card" data-id="${prompt.id}">
                     <div class="card-image-container">
-                        <img 
-                            class="card-image loading" 
-                            src="${firstImg}" 
-                            alt="${prompt.title}"
-                            
-                            onload="this.classList.remove('loading'); this.classList.add('loaded'); this.nextElementSibling.classList.add('hidden');"
-                            onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2212%22>图片加载失败</text></svg>'; this.classList.remove('loading'); this.classList.add('loaded'); this.nextElementSibling.classList.add('hidden');"
-                        >
-                        <div class="image-placeholder">📷</div>
-                        <div class="image-badge">📷 ${imgCount}</div>
-                        <button class="preview-btn" onclick='openLightbox(${JSON.stringify(prompt.images).replace(/'/g, "&#39;")}, 0)'>
-                            🔍 预览
-                        </button>
+                        <div class="image-gallery" id="gallery-${prompt.id}">
+                            ${imagesHtml}
+                        </div>
+                        ${imgCount > 1 ? `
+                            <button class="image-nav prev" onclick="slideGallery(document.getElementById('gallery-${prompt.id}'), -1)">‹</button>
+                            <button class="image-nav next" onclick="slideGallery(document.getElementById('gallery-${prompt.id}'), 1)">›</button>
+                            <div class="image-dots">${dotsHtml}</div>
+                        ` : ''}
+                        <div class="image-count">📷 ${imgCount}</div>
+                        <button class="preview-btn" onclick='openLightbox(${JSON.stringify(prompt.images).replace(/'/g, "&#39;")}, 0)'>🔍 预览</button>
                     </div>
                     <div class="card-content">
                         <div class="card-tags">
@@ -605,14 +776,16 @@
         // Render
         function render() {
             const search = searchInput.value.toLowerCase();
-            const lang = languageFilter.value;
-
+            const lang = languageSelect.value;
+            
             const filtered = prompts.filter(p => {
-                const matchSearch = p.title.toLowerCase().includes(search) ||
+                const matchSearch = !search || 
+                    p.title.toLowerCase().includes(search) ||
                     p.description.toLowerCase().includes(search) ||
                     p.prompt.toLowerCase().includes(search);
-                const matchLang = lang === 'all' || p.language === lang;
-                return matchSearch && matchLang;
+                const matchLang = !lang || p.language === lang;
+                const matchCat = !activeCategory || (p.tags && p.tags.includes(activeCategory));
+                return matchSearch && matchLang && matchCat;
             });
 
             if (filtered.length === 0) {
@@ -621,6 +794,25 @@
             } else {
                 emptyState.style.display = 'none';
                 grid.innerHTML = filtered.map(createCard).join('');
+
+                // Setup gallery scroll
+                document.querySelectorAll('.image-gallery').forEach(gallery => {
+                    const images = gallery.querySelectorAll('.gallery-image');
+                    const dots = gallery.parentElement.querySelectorAll('.image-dot');
+
+                    gallery.addEventListener('scroll', () => {
+                        const scrollLeft = gallery.scrollLeft;
+                        const imageWidth = gallery.offsetWidth;
+                        const activeIndex = Math.round(scrollLeft / imageWidth);
+                        
+                        dots.forEach((dot, i) => dot.classList.toggle('active', i === activeIndex));
+                        images.forEach((img, i) => img.classList.toggle('active', i === activeIndex));
+                    });
+
+                    dots.forEach((dot, i) => {
+                        dot.onclick = () => images[i].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+                    });
+                });
             }
         }
 
@@ -630,10 +822,17 @@
             return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
         }
 
+        // Event listeners
         searchInput.oninput = debounce(render, 300);
-        languageFilter.onchange = render;
+        languageSelect.onchange = render;
+        categorySelect.onchange = () => {
+            activeCategory = categorySelect.value;
+            renderCategoryBar();
+            render();
+        };
 
         // Init
+        renderCategoryBar();
         render();
     </script>
 </body>
