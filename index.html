@@ -5,35 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nano Banana Pro Prompts - 小红书风格</title>
     <style>
-        /* ============================
-           CSS Variables
-           ============================ */
         :root {
             --primary: #FF6B6B;
             --secondary: #C44569;
-            --accent: #FFD93D;
             --bg: #FFF9F5;
             --card-bg: #FFFFFF;
             --text-primary: #2D2D2D;
             --text-secondary: #666666;
             --success: #6BCB77;
-            --border: #EEEEEE;
-            --shadow: rgba(0, 0, 0, 0.08);
-            --shadow-hover: rgba(0, 0, 0, 0.15);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
             background: var(--bg);
             color: var(--text-primary);
             line-height: 1.6;
-            min-height: 100vh;
         }
 
         /* Header */
@@ -43,7 +31,7 @@
             z-index: 100;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             padding: 20px;
-            box-shadow: 0 4px 20px var(--shadow-hover);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
 
         .header-content {
@@ -81,7 +69,6 @@
             border-radius: 25px;
             font-size: 1rem;
             outline: none;
-            background: rgba(255, 255, 255, 0.95);
         }
 
         .filter-select {
@@ -89,12 +76,11 @@
             border: none;
             border-radius: 25px;
             font-size: 0.95rem;
-            background: rgba(255, 255, 255, 0.95);
             cursor: pointer;
             outline: none;
         }
 
-        /* Main Content */
+        /* Main */
         .main {
             max-width: 1400px;
             margin: 0 auto;
@@ -117,90 +103,64 @@
             background: var(--card-bg);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 4px 12px var(--shadow);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 24px var(--shadow-hover);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
         }
 
-        /* Image Gallery */
-        .card-image-wrapper {
+        /* Image Area */
+        .card-image-container {
             position: relative;
-            background: #f5f5f5;
-        }
-
-        .image-gallery {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-        }
-
-        .image-gallery::-webkit-scrollbar { display: none; }
-
-        .gallery-image {
-            flex: 0 0 100%;
             width: 100%;
-            min-height: 200px;
-            max-height: 350px;
-            object-fit: cover;
-            scroll-snap-align: start;
-            background: #e0e0e0;
+            height: 200px;
+            background: #f0f0f0;
+            overflow: hidden;
         }
 
-        .image-nav {
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-image.loaded {
+            opacity: 1;
+        }
+
+        .card-image.loading {
+            opacity: 0;
+        }
+
+        /* Placeholder shimmer animation */
+        .image-placeholder {
             position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.9);
-            border: none;
-            border-radius: 50%;
-            width: 32px;
-            height: 32px;
-            cursor: pointer;
-            font-size: 1rem;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
             display: flex;
             align-items: center;
             justify-content: center;
-            opacity: 0;
-            transition: opacity 0.2s;
-            z-index: 5;
+            color: #999;
+            font-size: 2rem;
         }
 
-        .card-image-wrapper:hover .image-nav { opacity: 1; }
-        .image-nav:hover { background: white; }
-        .image-nav.prev { left: 8px; }
-        .image-nav.next { right: 8px; }
+        .image-placeholder.hidden { display: none; }
 
-        .image-dots {
-            position: absolute;
-            bottom: 8px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 4px;
-            background: rgba(0,0,0,0.4);
-            padding: 4px 8px;
-            border-radius: 10px;
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
         }
 
-        .image-dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.5);
-            cursor: pointer;
-        }
-
-        .image-dot.active {
-            background: white;
-        }
-
-        .image-count-badge {
+        .image-badge {
             position: absolute;
             top: 8px;
             right: 8px;
@@ -212,6 +172,27 @@
             display: flex;
             align-items: center;
             gap: 4px;
+        }
+
+        .preview-btn {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background: rgba(255,255,255,0.95);
+            border: none;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.2s;
+        }
+
+        .preview-btn:hover {
+            background: white;
+            transform: scale(1.05);
         }
 
         /* Card Content */
@@ -329,24 +310,40 @@
             position: relative;
             max-width: 90%;
             max-height: 90%;
-        }
-
-        .lightbox-image {
-            max-width: 100%;
-            max-height: 85vh;
-            object-fit: contain;
-            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .lightbox-close {
             position: absolute;
-            top: -40px;
+            top: -50px;
             right: 0;
             background: none;
             border: none;
             color: white;
-            font-size: 2rem;
+            font-size: 3rem;
             cursor: pointer;
+            line-height: 1;
+        }
+
+        .lightbox-images {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            max-height: 80vh;
+            scrollbar-width: none;
+        }
+
+        .lightbox-images::-webkit-scrollbar { display: none; }
+
+        .lightbox-img {
+            flex: 0 0 auto;
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            scroll-snap-align: start;
+            border-radius: 8px;
         }
 
         .lightbox-nav {
@@ -356,22 +353,20 @@
             background: rgba(255,255,255,0.2);
             border: none;
             color: white;
-            font-size: 2rem;
-            padding: 20px 15px;
+            font-size: 3rem;
+            padding: 20px;
             cursor: pointer;
             border-radius: 8px;
+            line-height: 1;
         }
 
         .lightbox-nav:hover { background: rgba(255,255,255,0.3); }
-        .lightbox-nav.prev { left: -60px; }
-        .lightbox-nav.next { right: -60px; }
+        .lightbox-nav.prev { left: -80px; }
+        .lightbox-nav.next { right: -80px; }
 
         .lightbox-counter {
-            position: absolute;
-            bottom: -30px;
-            left: 50%;
-            transform: translateX(-50%);
             color: white;
+            margin-top: 16px;
             font-size: 1rem;
         }
 
@@ -387,23 +382,16 @@
             border-radius: 25px;
             font-size: 1rem;
             font-weight: 500;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
             z-index: 1000;
             opacity: 0;
             transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
-        .toast.show {
-            transform: translateX(-50%) translateY(0);
-            opacity: 1;
-        }
-
+        .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
         .toast.error { background: #FF6B6B; }
 
-        /* Empty State */
+        /* Empty */
         .empty-state {
             text-align: center;
             padding: 60px 20px;
@@ -420,19 +408,12 @@
             font-size: 0.9rem;
         }
 
-        .footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
+        .footer a { color: var(--primary); text-decoration: none; }
 
-        /* Responsive */
-        @media (max-width: 600px) {
-            .header-content { flex-direction: column; align-items: stretch; }
-            .search-box { max-width: 100%; }
-            .logo { justify-content: center; }
-            .lightbox-nav { padding: 15px 10px; font-size: 1.5rem; }
-            .lightbox-nav.prev { left: 5px; }
-            .lightbox-nav.next { right: 5px; }
+        @media (max-width: 768px) {
+            .lightbox-nav { padding: 10px; font-size: 2rem; }
+            .lightbox-nav.prev { left: 10px; }
+            .lightbox-nav.next { right: 10px; }
         }
     </style>
 </head>
@@ -444,7 +425,7 @@
                 <span>Nano Banana Pro Prompts</span>
             </div>
             <div class="search-box">
-                <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索 Prompts...">
+                <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索...">
                 <select class="filter-select" id="languageFilter">
                     <option value="all">全部语言</option>
                     <option value="ZH">🇨🇳 中文</option>
@@ -460,22 +441,21 @@
         <div class="masonry" id="promptsGrid"></div>
         <div class="empty-state" id="emptyState" style="display: none;">
             <div class="empty-state-icon">🔍</div>
-            <p class="empty-state-text">没有找到相关 Prompts</p>
+            <p>没有找到相关 Prompts</p>
         </div>
     </main>
 
     <footer class="footer">
         <p>数据来源: <a href="https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts" target="_blank">awesome-nano-banana-pro-prompts</a></p>
-        <p style="margin-top: 8px;">由 AI 整理 | 仅供学习使用</p>
     </footer>
 
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
         <div class="lightbox-content">
             <button class="lightbox-close" onclick="closeLightbox()">×</button>
-            <button class="lightbox-nav prev" onclick="lightboxPrev()">‹</button>
-            <img class="lightbox-image" id="lightboxImage" src="" alt="">
-            <button class="lightbox-nav next" onclick="lightboxNext()">›</button>
+            <button class="lightbox-nav prev" id="lightboxPrev">‹</button>
+            <div class="lightbox-images" id="lightboxImages"></div>
+            <button class="lightbox-nav next" id="lightboxNext">›</button>
             <div class="lightbox-counter" id="lightboxCounter"></div>
         </div>
     </div>
@@ -486,32 +466,32 @@
     <script src="data.js"></script>
     <script>
         // State
-        let favorites = JSON.parse(localStorage.getItem('nanoPromptFavorites') || '[]');
-        let currentLightboxPrompt = null;
-        let currentLightboxIndex = 0;
+        let favorites = JSON.parse(localStorage.getItem('nanoFavorites') || '[]');
+        let currentImages = [];
+        let currentIndex = 0;
 
-        // DOM Elements
+        // DOM
         const grid = document.getElementById('promptsGrid');
         const searchInput = document.getElementById('searchInput');
         const languageFilter = document.getElementById('languageFilter');
         const emptyState = document.getElementById('emptyState');
         const toast = document.getElementById('toast');
         const lightbox = document.getElementById('lightbox');
-        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxImages = document.getElementById('lightboxImages');
         const lightboxCounter = document.getElementById('lightboxCounter');
 
-        // Show toast
-        function showToast(message, isError = false) {
-            toast.textContent = message;
+        // Toast
+        function showToast(msg, isError = false) {
+            toast.textContent = msg;
             toast.className = 'toast' + (isError ? ' error' : '');
             toast.classList.add('show');
             setTimeout(() => toast.classList.remove('show'), 2000);
         }
 
-        // Copy prompt
-        async function copyPrompt(prompt, btn) {
+        // Copy
+        async function copyPrompt(text, btn) {
             try {
-                await navigator.clipboard.writeText(prompt);
+                await navigator.clipboard.writeText(text);
                 btn.innerHTML = '✓ 已复制';
                 btn.classList.add('success');
                 showToast('已复制到剪贴板 ✨');
@@ -524,25 +504,25 @@
             }
         }
 
-        // Toggle favorite
+        // Favorite
         function toggleFavorite(id, btn) {
-            const index = favorites.indexOf(id);
-            if (index > -1) {
-                favorites.splice(index, 1);
+            const idx = favorites.indexOf(id);
+            if (idx > -1) {
+                favorites.splice(idx, 1);
                 btn.classList.remove('active');
             } else {
                 favorites.push(id);
                 btn.classList.add('active');
                 showToast('已添加到收藏 💜');
             }
-            localStorage.setItem('nanoPromptFavorites', JSON.stringify(favorites));
+            localStorage.setItem('nanoFavorites', JSON.stringify(favorites));
         }
 
-        // Lightbox functions
-        function openLightbox(prompt, index) {
-            currentLightboxPrompt = prompt;
-            currentLightboxIndex = index;
-            updateLightboxImage();
+        // Lightbox
+        function openLightbox(images, index) {
+            currentImages = images;
+            currentIndex = index;
+            renderLightboxImages();
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -552,85 +532,69 @@
             document.body.style.overflow = '';
         }
 
-        function lightboxPrev() {
-            if (currentLightboxPrompt && currentLightboxPrompt.images.length > 1) {
-                currentLightboxIndex = (currentLightboxIndex - 1 + currentLightboxPrompt.images.length) % currentLightboxPrompt.images.length;
-                updateLightboxImage();
-            }
+        function lightboxNav(dir) {
+            currentIndex = (currentIndex + dir + currentImages.length) % currentImages.length;
+            renderLightboxImages();
+            // Scroll to current image
+            const img = lightboxImages.children[currentIndex];
+            if (img) img.scrollIntoView({ behavior: 'smooth', inline: 'start' });
         }
 
-        function lightboxNext() {
-            if (currentLightboxPrompt && currentLightboxPrompt.images.length > 1) {
-                currentLightboxIndex = (currentLightboxIndex + 1) % currentLightboxPrompt.images.length;
-                updateLightboxImage();
-            }
+        function renderLightboxImages() {
+            lightboxImages.innerHTML = currentImages.map((src, i) => 
+                `<img class="lightbox-img" src="${src}" alt="Image ${i+1}" crossorigin="anonymous">`
+            ).join('');
+            lightboxCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
         }
 
-        function updateLightboxImage() {
-            if (currentLightboxPrompt) {
-                lightboxImage.src = currentLightboxPrompt.images[currentLightboxIndex];
-                lightboxCounter.textContent = `${currentLightboxIndex + 1} / ${currentLightboxPrompt.images.length}`;
-            }
-        }
-
-        // Keyboard navigation for lightbox
+        // Event listeners
+        document.getElementById('lightboxPrev').onclick = () => lightboxNav(-1);
+        document.getElementById('lightboxNext').onclick = () => lightboxNav(1);
+        lightbox.onclick = (e) => { if (e.target === lightbox) closeLightbox(); };
+        
         document.addEventListener('keydown', (e) => {
-            if (lightbox.classList.contains('active')) {
-                if (e.key === 'Escape') closeLightbox();
-                if (e.key === 'ArrowLeft') lightboxPrev();
-                if (e.key === 'ArrowRight') lightboxNext();
-            }
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') lightboxNav(-1);
+            if (e.key === 'ArrowRight') lightboxNav(1);
         });
 
-        // Click outside to close lightbox
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) closeLightbox();
-        });
-
-        // Create card HTML
+        // Create Card
         function createCard(prompt) {
-            const isFavorite = favorites.includes(prompt.id);
-            const imageCount = prompt.images.length;
-
-            // Generate dots HTML
-            const dotsHtml = prompt.images.map((_, i) => 
-                `<div class="image-dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
-            ).join('');
-
-            // Generate images HTML
-            const imagesHtml = prompt.images.map((img, i) => 
-                `<img class="gallery-image" src="${img}" alt="${prompt.title} - Image ${i + 1}" data-index="${i}">`
-            ).join('');
+            const isFav = favorites.includes(prompt.id);
+            const firstImg = prompt.images[0];
+            const imgCount = prompt.images.length;
 
             return `
                 <article class="card" data-id="${prompt.id}">
-                    <div class="card-image-wrapper">
-                        <div class="image-gallery" id="gallery-${prompt.id}">
-                            ${imagesHtml}
-                        </div>
-                        ${prompt.images.length > 1 ? `
-                            <button class="image-nav prev" onclick="slideGallery('${prompt.id}', -1)">‹</button>
-                            <button class="image-nav next" onclick="slideGallery('${prompt.id}', 1)">›</button>
-                            <div class="image-dots">${dotsHtml}</div>
-                        ` : ''}
-                        <div class="image-count-badge">📷 ${imageCount}</div>
-                        <div class="image-count-badge" style="top:8px;left:8px;right:auto;">
-                            <span style="cursor:pointer" onclick="openLightbox(prompts.find(p=>p.id===${prompt.id}), 0)">🔍 点击预览</span>
-                        </div>
+                    <div class="card-image-container">
+                        <img 
+                            class="card-image loading" 
+                            src="${firstImg}" 
+                            alt="${prompt.title}"
+                            crossorigin="anonymous"
+                            onload="this.classList.remove('loading'); this.classList.add('loaded'); this.nextElementSibling.classList.add('hidden');"
+                            onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2212%22>图片加载失败</text></svg>'; this.classList.remove('loading'); this.classList.add('loaded'); this.nextElementSibling.classList.add('hidden');"
+                        >
+                        <div class="image-placeholder">📷</div>
+                        <div class="image-badge">📷 ${imgCount}</div>
+                        <button class="preview-btn" onclick='openLightbox(${JSON.stringify(prompt.images).replace(/'/g, "&#39;")}, 0)'>
+                            🔍 预览
+                        </button>
                     </div>
                     <div class="card-content">
                         <div class="card-tags">
-                            ${prompt.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}
+                            ${prompt.tags.map(t => `<span class="tag">#${t}</span>`).join('')}
                         </div>
                         <h3 class="card-title">${prompt.title}</h3>
                         <p class="card-description">${prompt.description}</p>
                         <div class="prompt-box">${prompt.prompt}</div>
                         <div class="card-actions">
-                            <button class="btn btn-copy" onclick="copyPrompt(\`${prompt.prompt.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`, this)">
+                            <button class="btn btn-copy" onclick="copyPrompt(\`${prompt.prompt.replace(/`/g, '\\`')}\`, this)">
                                 📋 复制
                             </button>
-                            <button class="btn btn-favorite ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(${prompt.id}, this)">
-                                ${isFavorite ? '❤️' : '🤍'}
+                            <button class="btn btn-favorite ${isFav ? 'active' : ''}" onclick="toggleFavorite(${prompt.id}, this)">
+                                ${isFav ? '❤️' : '🤍'}
                             </button>
                         </div>
                     </div>
@@ -638,38 +602,17 @@
             `;
         }
 
-        // Slide gallery
-        function slideGallery(galleryId, direction) {
-            const gallery = document.getElementById(`gallery-${galleryId}`);
-            const images = gallery.querySelectorAll('.gallery-image');
-            const dots = gallery.parentElement.querySelectorAll('.image-dot');
-            const currentIndex = Array.from(images).findIndex(img => img.src === img.src); // This won't work properly
-            
-            // Find active image
-            let activeIndex = 0;
-            images.forEach((img, i) => {
-                if (img.classList.contains('active')) activeIndex = i;
-            });
+        // Render
+        function render() {
+            const search = searchInput.value.toLowerCase();
+            const lang = languageFilter.value;
 
-            // Update active index
-            activeIndex = (activeIndex + direction + images.length) % images.length;
-            
-            // Scroll to image
-            images[activeIndex].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
-        }
-
-        // Render prompts
-        function renderPrompts() {
-            const searchTerm = searchInput.value.toLowerCase();
-            const language = languageFilter.value;
-
-            const filtered = prompts.filter(prompt => {
-                const matchesSearch = 
-                    prompt.title.toLowerCase().includes(searchTerm) ||
-                    prompt.description.toLowerCase().includes(searchTerm) ||
-                    prompt.prompt.toLowerCase().includes(searchTerm);
-                const matchesLanguage = language === 'all' || prompt.language === language;
-                return matchesSearch && matchesLanguage;
+            const filtered = prompts.filter(p => {
+                const matchSearch = p.title.toLowerCase().includes(search) ||
+                    p.description.toLowerCase().includes(search) ||
+                    p.prompt.toLowerCase().includes(search);
+                const matchLang = lang === 'all' || p.language === lang;
+                return matchSearch && matchLang;
             });
 
             if (filtered.length === 0) {
@@ -678,62 +621,20 @@
             } else {
                 emptyState.style.display = 'none';
                 grid.innerHTML = filtered.map(createCard).join('');
-
-                // Setup gallery navigation
-                document.querySelectorAll('.image-gallery').forEach(gallery => {
-                    const images = gallery.querySelectorAll('.gallery-image');
-                    const dots = gallery.parentElement.querySelectorAll('.image-dot');
-
-                    // Handle scroll
-                    gallery.addEventListener('scroll', () => {
-                        const scrollLeft = gallery.scrollLeft;
-                        const imageWidth = gallery.offsetWidth;
-                        const activeIndex = Math.round(scrollLeft / imageWidth);
-                        
-                        dots.forEach((dot, i) => {
-                            dot.classList.toggle('active', i === activeIndex);
-                        });
-                        images.forEach((img, i) => {
-                            img.classList.toggle('active', i === activeIndex);
-                        });
-                    });
-
-                    // Handle dot click
-                    dots.forEach((dot, i) => {
-                        dot.addEventListener('click', () => {
-                            images[i].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
-                        });
-                    });
-
-                    // Click image to open lightbox
-                    images.forEach((img, i) => {
-                        img.style.cursor = 'pointer';
-                        img.addEventListener('click', () => {
-                            const card = gallery.closest('.card');
-                            const id = parseInt(card.dataset.id);
-                            const prompt = prompts.find(p => p.id === id);
-                            openLightbox(prompt, i);
-                        });
-                    });
-                });
             }
         }
 
         // Debounce
-        function debounce(func, wait) {
-            let timeout;
-            return function(...args) {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => func.apply(this, args), wait);
-            };
+        function debounce(fn, wait) {
+            let t;
+            return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
         }
 
-        // Event listeners
-        searchInput.addEventListener('input', debounce(renderPrompts, 300));
-        languageFilter.addEventListener('change', renderPrompts);
+        searchInput.oninput = debounce(render, 300);
+        languageFilter.onchange = render;
 
-        // Initial render
-        renderPrompts();
+        // Init
+        render();
     </script>
 </body>
 </html>
