@@ -502,6 +502,7 @@
                         <option value="game-asset">游戏素材</option>
                         <option value="poster-flyer">海报 / 传单</option>
                         <option value="app-design">App / 网页设计</option>
+                        <option value="one-pager">One Pager</option>
                     </optgroup>
                     <optgroup label="风格">
                         <option value="photography">摄影</option>
@@ -690,15 +691,14 @@
         function renderCategoryBar() {
             const categories = [
                 { slug: 'profile-avatar', label: '头像' },
+                { slug: 'one-pager', label: 'One Pager' },
                 { slug: 'photography', label: '摄影' },
                 { slug: 'portrait', label: '人像' },
                 { slug: 'anime', label: '动漫' },
-                { slug: 'illustration', label: '插画' },
                 { slug: 'infographic', label: '信息图' },
                 { slug: 'product', label: '产品' },
                 { slug: '3d-render', label: '3D渲染' },
                 { slug: 'cinematic', label: '电影' },
-                { slug: 'game-asset', label: '游戏' },
             ];
             
             categoryBar.innerHTML = categories.map(c => 
