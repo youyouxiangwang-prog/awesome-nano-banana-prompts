@@ -2211,3 +2211,5 @@ const prompts = [
     "raycast": false
   }
 ];
+EOF
+mv data.js.tmp data.js
