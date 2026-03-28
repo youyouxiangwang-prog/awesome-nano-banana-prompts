@@ -2100,7 +2100,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Create a stock market / trading session infographic optimized for MOBILE (9:16): Inspired by financial dashboards and trading desk summaries. Meeting Content: Title: 盘面实战：情绪分化下的选股与仓位管理 # 盘面实战：情绪分化下的选股与仓位管理 ## 一、市场与情绪概览 - 情绪处于“冰点”，短线资金加速兑现，结构明显割裂： - 一边是20/30厘米连板（多与地缘冲突相关），如油气、港口等； - 另一边是大范围普",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/01_%E7%9B%98%E9%9D%A2%E5%AE%9E%E6%88%98%EF%BC%9A%E6%83%85%E7%BB%AA%E5%88%86%E5%8C%96%E4%B8%8B%E7%9A%84%E9%80%89%E8%82%A1%E4%B8%8E%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/01_%E7%9B%98%E9%9D%A2%E5%AE%9E%E6%88%98%EF%BC%9A%E6%83%85%E7%BB%AA%E5%88%86%E5%8C%96%E4%B8%8B%E7%9A%84%E9%80%89%E8%82%A1%E4%B8%8E%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2114,7 +2114,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Create a job interview / HR meeting summary infographic for MOBILE (9:16): Meeting Content: Title: iOS上架、硬件连通与候选人面试详谈 # iOS上架、硬件连通与候选人面试详谈 ## 会议概览 - 主题：围绕即将于3-4月提交的 iOS 上架合规与审核准备、与硬件连接（蓝牙/Wi‑Fi）稳定性问题排查、订阅支付合规设计，以及候选人项目经验与匹配度的深聊。 - 参与：面试官（B）与候选人（A）。 - 背景：公司为美国主体的新创团队，面向欧美/日韩市场；当前样机已完成连通，存在重启后连接体验问",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/02_iOS%E4%B8%8A%E6%9E%B6%E3%80%81%E7%A1%AC%E4%BB%B6%E8%BF%9E%E9%80%9A%E4%B8%8E%E5%80%99%E9%80%89%E4%BA%BA%E9%9D%A2%E8%AF%95%E8%AF%A6%E8%B0%88.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/02_iOS%E4%B8%8A%E6%9E%B6%E3%80%81%E7%A1%AC%E4%BB%B6%E8%BF%9E%E9%80%9A%E4%B8%8E%E5%80%99%E9%80%89%E4%BA%BA%E9%9D%A2%E8%AF%95%E8%AF%A6%E8%B0%88.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2128,7 +2128,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Meeting summary infographic",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/03_%E5%9C%B0%E7%BC%98%E5%86%B2%E7%AA%81%E4%B8%8B%E7%9A%84A%E8%82%A1%E7%9B%98%E9%9D%A2%E8%A7%A3%E8%AF%BB%E4%B8%8E%E5%8F%AF%E6%93%8D%E4%BD%9C%E6%96%B9%E5%90%91.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/03_%E5%9C%B0%E7%BC%98%E5%86%B2%E7%AA%81%E4%B8%8B%E7%9A%84A%E8%82%A1%E7%9B%98%E9%9D%A2%E8%A7%A3%E8%AF%BB%E4%B8%8E%E5%8F%AF%E6%93%8D%E4%BD%9C%E6%96%B9%E5%90%91.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2142,7 +2142,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Meeting summary infographic",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/04_%E5%AD%98%E5%82%A8%E3%80%81%E4%BE%9B%E5%BA%94%E4%B8%8E%E9%9F%B3%E9%A2%91%E8%B0%83%E6%A0%A1%EF%BC%9A%E9%87%8F%E4%BA%A7%E5%86%B3%E7%AD%96%E4%BC%9A.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/04_%E5%AD%98%E5%82%A8%E3%80%81%E4%BE%9B%E5%BA%94%E4%B8%8E%E9%9F%B3%E9%A2%91%E8%B0%83%E6%A0%A1%EF%BC%9A%E9%87%8F%E4%BA%A7%E5%86%B3%E7%AD%96%E4%BC%9A.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2156,7 +2156,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Meeting summary infographic",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/05_%E8%B5%84%E6%B7%B1%E4%BA%A7%E5%93%81%E4%BA%BA%E9%9D%A2%E8%B0%88%EF%BC%9A%E4%BB%8E%E7%A1%AC%E4%BB%B6%E5%88%B0AI%E7%9A%84%E5%A4%8D%E7%9B%98%E4%B8%8E%E5%88%9B%E4%B8%9A%E6%84%8F%E5%90%91.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/05_%E8%B5%84%E6%B7%B1%E4%BA%A7%E5%93%81%E4%BA%BA%E9%9D%A2%E8%B0%88%EF%BC%9A%E4%BB%8E%E7%A1%AC%E4%BB%B6%E5%88%B0AI%E7%9A%84%E5%A4%8D%E7%9B%98%E4%B8%8E%E5%88%9B%E4%B8%9A%E6%84%8F%E5%90%91.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2170,7 +2170,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Meeting summary infographic",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/06_%E8%8B%B1%E8%AF%AD%E8%AF%BE%E5%A0%82%EF%BC%9A%E8%AF%8D%E4%B9%89%E8%AE%B2%E8%A7%A3%E4%B8%8E%E7%BB%83%E4%B9%A0%E7%89%87%E6%AE%B5.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/06_%E8%8B%B1%E8%AF%AD%E8%AF%BE%E5%A0%82%EF%BC%9A%E8%AF%8D%E4%B9%89%E8%AE%B2%E8%A7%A3%E4%B8%8E%E7%BB%83%E4%B9%A0%E7%89%87%E6%AE%B5.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "EN",
@@ -2184,7 +2184,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Meeting summary infographic",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/07_CAT4%E6%A8%A1%E8%80%83%E8%BE%85%E5%AF%BC%EF%BC%9A%E5%9B%BE%E5%BD%A2%E6%8E%A8%E7%90%86%E4%B8%8E%E8%AF%8D%E6%B1%87%E7%8E%B0%E5%9C%BA%E8%AE%AD%E7%BB%83.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/07_CAT4%E6%A8%A1%E8%80%83%E8%BE%85%E5%AF%BC%EF%BC%9A%E5%9B%BE%E5%BD%A2%E6%8E%A8%E7%90%86%E4%B8%8E%E8%AF%8D%E6%B1%87%E7%8E%B0%E5%9C%BA%E8%AE%AD%E7%BB%83.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
@@ -2198,7 +2198,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Meeting summary infographic",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/08_CDNIS%20Interview%20Coaching%20for%20Angela.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/08_CDNIS%20Interview%20Coaching%20for%20Angela.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "EN",
@@ -2212,7 +2212,7 @@ const prompts = [
     "description": "Meeting summary infographic (uploaded 2026-03-27).",
     "prompt": "Meeting summary infographic",
     "images": [
-      "https://raw.githubusercontent.com/youyouxiangwang-prog/awesome-nano-banana-prompts/main/infographics/09_%E7%AE%80%E7%9F%AD%E8%AF%AD%E9%9F%B3%E5%BD%95%E5%85%A5%EF%BC%9A%E6%95%B0%E5%AD%97%E4%B8%B2%E4%B8%8E%E4%B8%80%E5%8F%A5%E2%80%9C%E5%90%8E%E7%BB%AD%E6%98%AF%E5%90%A7%EF%BC%9F%E2%80%9D.jpg"
+      "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/09_%E7%AE%80%E7%9F%AD%E8%AF%AD%E9%9F%B3%E5%BD%95%E5%85%A5%EF%BC%9A%E6%95%B0%E5%AD%97%E4%B8%B2%E4%B8%8E%E4%B8%80%E5%8F%A5%E2%80%9C%E5%90%8E%E7%BB%AD%E6%98%AF%E5%90%A7%EF%BC%9F%E2%80%9D.jpg"
     ],
     "tags": ["one-pager", "infographic"],
     "language": "ZH",
