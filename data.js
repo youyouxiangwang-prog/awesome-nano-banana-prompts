@@ -2219,4 +2219,1511 @@ const prompts = [
     "featured": false,
     "raycast": false
   }
+,
+[
+    {
+        "id": 130,
+        "title": "One Pager - 盘面实战：情绪分化下的选股与仓位管理",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a stock market / trading session infographic optimized for MOBILE (9:16):\n\nInspired by financial dashboards and trading desk summaries.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/01_%E7%9B%98%E9%9D%A2%E5%AE%9E%E6%88%98%EF%BC%9A%E6%83%85%E7%BB%AA%E5%88%86%E5%8C%96%E4%B8%8B%E7%9A%84%E9%80%89%E8%82%A1%E4%B8%8E%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 131,
+        "title": "One Pager - iOS上架、硬件连通与候选人面试详谈",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a job interview / HR meeting summary infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: iOS上架、硬件连通与候选人面试详谈\n\n# iOS上架、硬件连通与候选人面试详谈\n\n## 会议概览",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/02_iOS%E4%B8%8A%E6%9E%B6%E3%80%81%E7%A1%AC%E4%BB%B6%E8%BF%9E%E9%80%9A%E4%B8%8E%E5%80%99%E9%80%89%E4%BA%BA%E9%9D%A2%E8%AF%95%E8%AF%A6%E8%B0%88.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 132,
+        "title": "One Pager - 地缘冲突下的A股盘面解读与可操作方向",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a stock market / trading session infographic optimized for MOBILE (9:16):\n\nInspired by financial dashboards and trading desk summaries.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/03_%E5%9C%B0%E7%BC%98%E5%86%B2%E7%AA%81%E4%B8%8B%E7%9A%84A%E8%82%A1%E7%9B%98%E9%9D%A2%E8%A7%A3%E8%AF%BB%E4%B8%8E%E5%8F%AF%E6%93%8D%E4%BD%9C%E6%96%B9%E5%90%91.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 133,
+        "title": "One Pager - 存储、供应与音频调校：量产决策会",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a hardware product / startup build meeting infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 存储、供应与音频调校：量产决策会\n\n# 存储、供应与音频调校：量产决策会\n\n## 会议背",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/04_%E5%AD%98%E5%82%A8%E3%80%81%E4%BE%9B%E5%BA%94%E4%B8%8E%E9%9F%B3%E9%A2%91%E8%B0%83%E6%A0%A1%EF%BC%9A%E9%87%8F%E4%BA%A7%E5%86%B3%E7%AD%96%E4%BC%9A.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 134,
+        "title": "One Pager - 资深产品人面谈：从硬件到AI的复盘与创业意向",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a job interview / HR meeting summary infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 资深产品人面谈：从硬件到AI的复盘与创业意向\n\n# 资深产品人面谈：从硬件到AI的复盘与创业意向",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/05_%E8%B5%84%E6%B7%B1%E4%BA%A7%E5%93%81%E4%BA%BA%E9%9D%A2%E8%B0%88%EF%BC%9A%E4%BB%8E%E7%A1%AC%E4%BB%B6%E5%88%B0AI%E7%9A%84%E5%A4%8D%E7%9B%98%E4%B8%8E%E5%88%9B%E4%B8%9A%E6%84%8F%E5%90%91.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 135,
+        "title": "One Pager - 英语课堂：词义讲解与练习片段",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an education / tutoring session infographic for MOBILE (9:16):\n\nInspired by chalkboard-style teacher explainers and study plan visuals.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/06_%E8%8B%B1%E8%AF%AD%E8%AF%BE%E5%A0%82%EF%BC%9A%E8%AF%8D%E4%B9%89%E8%AE%B2%E8%A7%A3%E4%B8%8E%E7%BB%83%E4%B9%A0%E7%89%87%E6%AE%B5.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 136,
+        "title": "One Pager - CAT4模考辅导：图形推理与词汇现场训练",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an education / tutoring session infographic for MOBILE (9:16):\n\nInspired by chalkboard-style teacher explainers and study plan visuals.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/07_CAT4%E6%A8%A1%E8%80%83%E8%BE%85%E5%AF%BC%EF%BC%9A%E5%9B%BE%E5%BD%A2%E6%8E%A8%E7%90%86%E4%B8%8E%E8%AF%8D%E6%B1%87%E7%8E%B0%E5%9C%BA%E8%AE%AD%E7%BB%83.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 137,
+        "title": "One Pager - CDNIS Interview Coaching for Angela",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an education / tutoring session infographic for MOBILE (9:16):\n\nInspired by chalkboard-style teacher explainers and study plan visuals.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/08_CDNIS%20Interview%20Coaching%20for%20Angela.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 138,
+        "title": "One Pager - 简短语音录入：数字串与一句“后续是吧？”",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a personal daily summary / reflection infographic for MOBILE (9:16):\n\nInspired by Notion daily notes, bullet journal aesthetics, and personal p",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/09_%E7%AE%80%E7%9F%AD%E8%AF%AD%E9%9F%B3%E5%BD%95%E5%85%A5%EF%BC%9A%E6%95%B0%E5%AD%97%E4%B8%B2%E4%B8%8E%E4%B8%80%E5%8F%A5%E2%80%9C%E5%90%8E%E7%BB%AD%E6%98%AF%E5%90%A7%EF%BC%9F%E2%80%9D.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 139,
+        "title": "One Pager - 朗读数字：一到二十",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an education / tutoring session infographic for MOBILE (9:16):\n\nInspired by chalkboard-style teacher explainers and study plan visuals.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/10_%E6%9C%97%E8%AF%BB%E6%95%B0%E5%AD%97%EF%BC%9A%E4%B8%80%E5%88%B0%E4%BA%8C%E5%8D%81.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 140,
+        "title": "One Pager - 从品牌内容到量产节点：一次产品上市前的全面倒推会议",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/11_%E4%BB%8E%E5%93%81%E7%89%8C%E5%86%85%E5%AE%B9%E5%88%B0%E9%87%8F%E4%BA%A7%E8%8A%82%E7%82%B9%EF%BC%9A%E4%B8%80%E6%AC%A1%E4%BA%A7%E5%93%81%E4%B8%8A%E5%B8%82%E5%89%8D%E7%9A%84%E5%85%A8%E9%9D%A2%E5%80%92%E6%8E%A8%E4%BC%9A%E8%AE%AE.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 141,
+        "title": "One Pager - 官网改版策略会：把产品画面与“丝滑”体验放在首位",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/12_%E5%AE%98%E7%BD%91%E6%94%B9%E7%89%88%E7%AD%96%E7%95%A5%E4%BC%9A%EF%BC%9A%E6%8A%8A%E4%BA%A7%E5%93%81%E7%94%BB%E9%9D%A2%E4%B8%8E%E2%80%9C%E4%B8%9D%E6%BB%91%E2%80%9D%E4%BD%93%E9%AA%8C%E6%94%BE%E5%9C%A8%E9%A6%96%E4%BD%8D.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 142,
+        "title": "One Pager - 候选人Catherine与创业者关于职业与AI的深入对话",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a job interview / HR meeting summary infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 候选人Catherine与创业者关于职业与AI的深入对话\n\n# 候选人Catherine与创业者关于",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/13_%E5%80%99%E9%80%89%E4%BA%BACatherine%E4%B8%8E%E5%88%9B%E4%B8%9A%E8%80%85%E5%85%B3%E4%BA%8E%E8%81%8C%E4%B8%9A%E4%B8%8EAI%E7%9A%84%E6%B7%B1%E5%85%A5%E5%AF%B9%E8%AF%9D.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 143,
+        "title": "One Pager - 可穿戴产品防水、测试与上线节奏的决策与风险讨论",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a hardware product / startup build meeting infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 可穿戴产品防水、测试与上线节奏的决策与风险讨论\n\n# 可穿戴产品防水、测试与上线节奏的决",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/14_%E5%8F%AF%E7%A9%BF%E6%88%B4%E4%BA%A7%E5%93%81%E9%98%B2%E6%B0%B4%E3%80%81%E6%B5%8B%E8%AF%95%E4%B8%8E%E4%B8%8A%E7%BA%BF%E8%8A%82%E5%A5%8F%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E9%A3%8E%E9%99%A9%E8%AE%A8%E8%AE%BA.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 144,
+        "title": "One Pager - 产品为先：从获客成本到量产风险的全员同步会",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a hardware product / startup build meeting infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 产品为先：从获客成本到量产风险的全员同步会\n\n# 从获客到量产：录音硬件团队的产品、营销",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/15_%E4%BA%A7%E5%93%81%E4%B8%BA%E5%85%88%EF%BC%9A%E4%BB%8E%E8%8E%B7%E5%AE%A2%E6%88%90%E6%9C%AC%E5%88%B0%E9%87%8F%E4%BA%A7%E9%A3%8E%E9%99%A9%E7%9A%84%E5%85%A8%E5%91%98%E5%90%8C%E6%AD%A5%E4%BC%9A.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 145,
+        "title": "One Pager - 产品为先：从获客成本到量产风险的全员同步会",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a hardware product / startup build meeting infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 产品为先：从获客成本到量产风险的全员同步会\n\n# 产品为先：从获客成本到量产风险的全员同",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/16_%E4%BA%A7%E5%93%81%E4%B8%BA%E5%85%88%EF%BC%9A%E4%BB%8E%E8%8E%B7%E5%AE%A2%E6%88%90%E6%9C%AC%E5%88%B0%E9%87%8F%E4%BA%A7%E9%A3%8E%E9%99%A9%E7%9A%84%E5%85%A8%E5%91%98%E5%90%8C%E6%AD%A5%E4%BC%9A.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 146,
+        "title": "One Pager - 转转关停自由市场：二手平台的信任与商业抉择",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an executive strategy dashboard for MOBILE VERTICAL DISPLAY (9:16):\n\nMeeting Content:\nTitle: 转转关停自由市场：二手平台的信任与商业抉择\n\n# 转转关停自由市场：二手平台的信任与商业抉择\n\n##",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/17_%E8%BD%AC%E8%BD%AC%E5%85%B3%E5%81%9C%E8%87%AA%E7%94%B1%E5%B8%82%E5%9C%BA%EF%BC%9A%E4%BA%8C%E6%89%8B%E5%B9%B3%E5%8F%B0%E7%9A%84%E4%BF%A1%E4%BB%BB%E4%B8%8E%E5%95%86%E4%B8%9A%E6%8A%89%E6%8B%A9.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 147,
+        "title": "One Pager - 转转放手C2C：二手市场的信用与商业抉择",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an executive strategy dashboard for MOBILE VERTICAL DISPLAY (9:16):\n\nMeeting Content:\nTitle: 转转放手C2C：二手市场的信用与商业抉择\n\n# 转转放手C2C：二手市场的信用与商业抉择\n\n## 概",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/18_%E8%BD%AC%E8%BD%AC%E6%94%BE%E6%89%8BC2C%EF%BC%9A%E4%BA%8C%E6%89%8B%E5%B8%82%E5%9C%BA%E7%9A%84%E4%BF%A1%E7%94%A8%E4%B8%8E%E5%95%86%E4%B8%9A%E6%8A%89%E6%8B%A9.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 148,
+        "title": "One Pager - 英語補習：醫療詞彙、文法與記憶技巧",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an education / tutoring session infographic for MOBILE (9:16):\n\nInspired by chalkboard-style teacher explainers and study plan visuals.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/19_%E8%8B%B1%E8%AA%9E%E8%A3%9C%E7%BF%92%EF%BC%9A%E9%86%AB%E7%99%82%E8%A9%9E%E5%BD%99%E3%80%81%E6%96%87%E6%B3%95%E8%88%87%E8%A8%98%E6%86%B6%E6%8A%80%E5%B7%A7.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 149,
+        "title": "One Pager - A股短线与机构风格冲突：个股破局与题材轮动解读",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a stock market / trading session infographic optimized for MOBILE (9:16):\n\nInspired by financial dashboards and trading desk summaries.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/20_A%E8%82%A1%E7%9F%AD%E7%BA%BF%E4%B8%8E%E6%9C%BA%E6%9E%84%E9%A3%8E%E6%A0%BC%E5%86%B2%E7%AA%81%EF%BC%9A%E4%B8%AA%E8%82%A1%E7%A0%B4%E5%B1%80%E4%B8%8E%E9%A2%98%E6%9D%90%E8%BD%AE%E5%8A%A8%E8%A7%A3%E8%AF%BB.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 150,
+        "title": "One Pager - 讨论设备到 APP 的上传流程与弱网与进度提示",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a system architecture infographic optimized for MOBILE VERTICAL DISPLAY (9:16 portrait):\n\nMeeting Content:\nTitle: 讨论设备到 APP 的上传流程与弱网与进度提示\n\n# 讨论",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/21_%E8%AE%A8%E8%AE%BA%E8%AE%BE%E5%A4%87%E5%88%B0%20APP%20%E7%9A%84%E4%B8%8A%E4%BC%A0%E6%B5%81%E7%A8%8B%E4%B8%8E%E5%BC%B1%E7%BD%91%E4%B8%8E%E8%BF%9B%E5%BA%A6%E6%8F%90%E7%A4%BA.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 151,
+        "title": "One Pager - 团队讨论：优化欢迎信与众筹前的邮件投放策略",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a product launch for MOBILE (9:16):\n\nMeeting Content:\nTitle: 团队讨论：优化欢迎信与众筹前的邮件投放策略\n\n# 团队讨论：优化欢迎信与众筹前的邮件投放策略\n\n## 会议目的\n围绕欢迎邮件（Welcome Email Flow）",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/22_%E5%9B%A2%E9%98%9F%E8%AE%A8%E8%AE%BA%EF%BC%9A%E4%BC%98%E5%8C%96%E6%AC%A2%E8%BF%8E%E4%BF%A1%E4%B8%8E%E4%BC%97%E7%AD%B9%E5%89%8D%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8A%95%E6%94%BE%E7%AD%96%E7%95%A5.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 152,
+        "title": "One Pager - Team Onboarding, PhD Paths, and AI_Data Access Cha",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate construction project for MOBILE (9:16):\n\nMeeting Content:\nTitle: Team Onboarding, PhD Paths, and AI/Data Access Challenges\n\n# Team Onboarding,",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/23_Team%20Onboarding%2C%20PhD%20Paths%2C%20and%20AI_Data%20Access%20Cha.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 153,
+        "title": "One Pager - 用AI提升招聘效率：产品演示与企业会员对比",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate sales funnel for MOBILE (9:16):\n\nMeeting Content:\nTitle: 用AI提升招聘效率：产品演示与企业会员对比\n\n# 用AI提升招聘效率：产品演示与企业会员对比\n\n## 会议概述\n- 目标：梳理当前招聘需求，演示平台AI招聘能力，讨论个人会",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/24_%E7%94%A8AI%E6%8F%90%E5%8D%87%E6%8B%9B%E8%81%98%E6%95%88%E7%8E%87%EF%BC%9A%E4%BA%A7%E5%93%81%E6%BC%94%E7%A4%BA%E4%B8%8E%E4%BC%81%E4%B8%9A%E4%BC%9A%E5%91%98%E5%AF%B9%E6%AF%94.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 154,
+        "title": "One Pager - 课堂实录：英语单词、语法与口语俗语教学片段",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an education / tutoring session infographic for MOBILE (9:16):\n\nInspired by chalkboard-style teacher explainers and study plan visuals.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/25_%E8%AF%BE%E5%A0%82%E5%AE%9E%E5%BD%95%EF%BC%9A%E8%8B%B1%E8%AF%AD%E5%8D%95%E8%AF%8D%E3%80%81%E8%AF%AD%E6%B3%95%E4%B8%8E%E5%8F%A3%E8%AF%AD%E4%BF%97%E8%AF%AD%E6%95%99%E5%AD%A6%E7%89%87%E6%AE%B5.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 155,
+        "title": "One Pager - 线上英语口语课堂：词汇、搭配与杂谈",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an education / tutoring session infographic for MOBILE (9:16):\n\nInspired by chalkboard-style teacher explainers and study plan visuals.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/26_%E7%BA%BF%E4%B8%8A%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E8%AF%BE%E5%A0%82%EF%BC%9A%E8%AF%8D%E6%B1%87%E3%80%81%E6%90%AD%E9%85%8D%E4%B8%8E%E6%9D%82%E8%B0%88.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 156,
+        "title": "One Pager - 产品推广会议：问卷、官网与投放策略确认",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a product launch for MOBILE (9:16):\n\nMeeting Content:\nTitle: 产品推广会议：问卷、官网与投放策略确认\n\n# 产品推广会议：问卷、官网与投放策略确认\n\n## 会议概述\n- 与会人员：SPK_A、SPK_B、SPK_C\n- 会议主",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/27_%E4%BA%A7%E5%93%81%E6%8E%A8%E5%B9%BF%E4%BC%9A%E8%AE%AE%EF%BC%9A%E9%97%AE%E5%8D%B7%E3%80%81%E5%AE%98%E7%BD%91%E4%B8%8E%E6%8A%95%E6%94%BE%E7%AD%96%E7%95%A5%E7%A1%AE%E8%AE%A4.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 157,
+        "title": "One Pager - Startup Brand, Messaging and Go-to-Market Debate",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/28_Startup%20Brand%2C%20Messaging%20and%20Go-to-Market%20Debate.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 158,
+        "title": "One Pager - 把产品做到“能用”，再谈杀手功能与上线节奏",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a hardware product / startup build meeting infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 把产品做到“能用”，再谈杀手功能与上线节奏\n\n# 把产品做到“能用”，再谈杀手功能与上线",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/29_%E6%8A%8A%E4%BA%A7%E5%93%81%E5%81%9A%E5%88%B0%E2%80%9C%E8%83%BD%E7%94%A8%E2%80%9D%EF%BC%8C%E5%86%8D%E8%B0%88%E6%9D%80%E6%89%8B%E5%8A%9F%E8%83%BD%E4%B8%8E%E4%B8%8A%E7%BA%BF%E8%8A%82%E5%A5%8F.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 159,
+        "title": "One Pager - Shaping MemoCat_ simple messaging, real use cases",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/30_Shaping%20MemoCat_%20simple%20messaging%2C%20real%20use%20cases.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 160,
+        "title": "One Pager - 邮件投递与用户活跃：从促销词到问卷与众筹延期",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/31_%E9%82%AE%E4%BB%B6%E6%8A%95%E9%80%92%E4%B8%8E%E7%94%A8%E6%88%B7%E6%B4%BB%E8%B7%83%EF%BC%9A%E4%BB%8E%E4%BF%83%E9%94%80%E8%AF%8D%E5%88%B0%E9%97%AE%E5%8D%B7%E4%B8%8E%E4%BC%97%E7%AD%B9%E5%BB%B6%E6%9C%9F.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 161,
+        "title": "One Pager - 官网与众筹页讨论：内容、框架与执行分工",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/32_%E5%AE%98%E7%BD%91%E4%B8%8E%E4%BC%97%E7%AD%B9%E9%A1%B5%E8%AE%A8%E8%AE%BA%EF%BC%9A%E5%86%85%E5%AE%B9%E3%80%81%E6%A1%86%E6%9E%B6%E4%B8%8E%E6%89%A7%E8%A1%8C%E5%88%86%E5%B7%A5.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 162,
+        "title": "One Pager - 准备开始录音的简短对话",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/33_%E5%87%86%E5%A4%87%E5%BC%80%E5%A7%8B%E5%BD%95%E9%9F%B3%E7%9A%84%E7%AE%80%E7%9F%AD%E5%AF%B9%E8%AF%9D.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 163,
+        "title": "One Pager - 准备开始录音的简短对话",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/34_%E5%87%86%E5%A4%87%E5%BC%80%E5%A7%8B%E5%BD%95%E9%9F%B3%E7%9A%84%E7%AE%80%E7%9F%AD%E5%AF%B9%E8%AF%9D.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 164,
+        "title": "One Pager - 可穿戴样机设计：尺寸、露出与量产权衡",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a hardware product / startup build meeting infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 可穿戴样机设计：尺寸、露出与量产权衡\n\n# 可穿戴样机设计：尺寸、露出与量产权衡\n\n##",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/35_%E5%8F%AF%E7%A9%BF%E6%88%B4%E6%A0%B7%E6%9C%BA%E8%AE%BE%E8%AE%A1%EF%BC%9A%E5%B0%BA%E5%AF%B8%E3%80%81%E9%9C%B2%E5%87%BA%E4%B8%8E%E9%87%8F%E4%BA%A7%E6%9D%83%E8%A1%A1.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 165,
+        "title": "One Pager - 产品与官网升级：聚焦定位、用户细分与降低获客成本",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/36_%E4%BA%A7%E5%93%81%E4%B8%8E%E5%AE%98%E7%BD%91%E5%8D%87%E7%BA%A7%EF%BC%9A%E8%81%9A%E7%84%A6%E5%AE%9A%E4%BD%8D%E3%80%81%E7%94%A8%E6%88%B7%E7%BB%86%E5%88%86%E4%B8%8E%E9%99%8D%E4%BD%8E%E8%8E%B7%E5%AE%A2%E6%88%90%E6%9C%AC.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 166,
+        "title": "One Pager - 产品与官网升级：定位、获客与隐私担忧的周会同步",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/37_%E4%BA%A7%E5%93%81%E4%B8%8E%E5%AE%98%E7%BD%91%E5%8D%87%E7%BA%A7%EF%BC%9A%E5%AE%9A%E4%BD%8D%E3%80%81%E8%8E%B7%E5%AE%A2%E4%B8%8E%E9%9A%90%E7%A7%81%E6%8B%85%E5%BF%A7%E7%9A%84%E5%91%A8%E4%BC%9A%E5%90%8C%E6%AD%A5.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 167,
+        "title": "One Pager - Usability Test_ Interactive Portraits in a Gallery",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a product design for MOBILE (9:16):\n\nMeeting Content:\nTitle: Usability Test: Interactive Portraits in a Gallery Prototype\n\n# Usability Test: In",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/38_Usability%20Test_%20Interactive%20Portraits%20in%20a%20Gallery.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 168,
+        "title": "One Pager - Parent Seeks Tutor for Daughter's International Sc",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an education / tutoring session infographic for MOBILE (9:16):\n\nInspired by chalkboard-style teacher explainers and study plan visuals.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/39_Parent%20Seeks%20Tutor%20for%20Daughter%27s%20International%20Sc.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 169,
+        "title": "One Pager - 创品团队深聊：硬件、软件、定位与速度的抉择",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a hardware product / startup build meeting infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 创品团队深聊：硬件、软件、定位与速度的抉择\n\n# 创品团队深聊：硬件、软件、定位与速度的",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/40_%E5%88%9B%E5%93%81%E5%9B%A2%E9%98%9F%E6%B7%B1%E8%81%8A%EF%BC%9A%E7%A1%AC%E4%BB%B6%E3%80%81%E8%BD%AF%E4%BB%B6%E3%80%81%E5%AE%9A%E4%BD%8D%E4%B8%8E%E9%80%9F%E5%BA%A6%E7%9A%84%E6%8A%89%E6%8B%A9.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 170,
+        "title": "One Pager - 儿童OK镜复查：佩戴情况、干眼与换片建议",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a wellness and health tracking infographic with fresh, energetic design:\n\nMeeting Content:\nTitle: 儿童OK镜复查：佩戴情况、干眼与换片建议\n\n# 儿童OK镜复查：佩戴情况、干眼与换片建议",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/41_%E5%84%BF%E7%AB%A5OK%E9%95%9C%E5%A4%8D%E6%9F%A5%EF%BC%9A%E4%BD%A9%E6%88%B4%E6%83%85%E5%86%B5%E3%80%81%E5%B9%B2%E7%9C%BC%E4%B8%8E%E6%8D%A2%E7%89%87%E5%BB%BA%E8%AE%AE.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 171,
+        "title": "One Pager - User testing_ meeting-summarizer app & wearable fe",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a product design for MOBILE (9:16):\n\nMeeting Content:\nTitle: User testing: meeting-summarizer app & wearable feedback\n\n# User testing: meeting-",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/42_User%20testing_%20meeting-summarizer%20app%20%26%20wearable%20fe.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 172,
+        "title": "One Pager - Single-Word Name Mention",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/43_Single-Word%20Name%20Mention.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 173,
+        "title": "One Pager - 直播对话：猫、食物与反复的点赞口号",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a social gathering event infographic with festive energy:\n\nMeeting Content:\nTitle: 直播对话：猫、食物与反复的点赞口号\n\n# 直播对话：猫、食物与反复的点赞口号\n\n## 概要\n这是一场风格极为松散、充满即",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/44_%E7%9B%B4%E6%92%AD%E5%AF%B9%E8%AF%9D%EF%BC%9A%E7%8C%AB%E3%80%81%E9%A3%9F%E7%89%A9%E4%B8%8E%E5%8F%8D%E5%A4%8D%E7%9A%84%E7%82%B9%E8%B5%9E%E5%8F%A3%E5%8F%B7.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 174,
+        "title": "One Pager - 室内攀岩教学直播：技巧、规则与实时互动",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an educational learning plan infographic with academic style:\n\nMeeting Content:\nTitle: 室内攀岩教学直播：技巧、规则与实时互动\n\n# 室内攀岩教学直播：技巧、规则与实时互动\n\n## 概述\n本次直播围绕",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/45_%E5%AE%A4%E5%86%85%E6%94%80%E5%B2%A9%E6%95%99%E5%AD%A6%E7%9B%B4%E6%92%AD%EF%BC%9A%E6%8A%80%E5%B7%A7%E3%80%81%E8%A7%84%E5%88%99%E4%B8%8E%E5%AE%9E%E6%97%B6%E4%BA%92%E5%8A%A8.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 175,
+        "title": "One Pager - 线上线下训练课：教练指导、录音噪声与App总结讨论",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a hardware product / startup build meeting infographic for MOBILE (9:16):\n\nMeeting Content:\nTitle: 线上线下训练课：教练指导、录音噪声与App总结讨论\n\n# 线上线下训练课：教练指导、录音",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/46_%E7%BA%BF%E4%B8%8A%E7%BA%BF%E4%B8%8B%E8%AE%AD%E7%BB%83%E8%AF%BE%EF%BC%9A%E6%95%99%E7%BB%83%E6%8C%87%E5%AF%BC%E3%80%81%E5%BD%95%E9%9F%B3%E5%99%AA%E5%A3%B0%E4%B8%8EApp%E6%80%BB%E7%BB%93%E8%AE%A8%E8%AE%BA.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 176,
+        "title": "One Pager - Single-Word Reply Conversation",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/47_Single-Word%20Reply%20Conversation.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 177,
+        "title": "One Pager - Single Polite Prompt",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/48_Single%20Polite%20Prompt.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 178,
+        "title": "One Pager - Single-word Confirmation",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/49_Single-word%20Confirmation.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 179,
+        "title": "One Pager - Single-Word Affirmation",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/50_Single-Word%20Affirmation.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 180,
+        "title": "One Pager - 产品说明书、App流程与广告投放的跨团队讨论",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a product launch for MOBILE (9:16):\n\nMeeting Content:\nTitle: 产品说明书、App流程与广告投放的跨团队讨论\n\n# 产品说明书、App流程与广告投放的跨团队讨论\n\n## 会议概览\n- 主题围绕三大板块展开：产品说明书与QSG、A",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/51_%E4%BA%A7%E5%93%81%E8%AF%B4%E6%98%8E%E4%B9%A6%E3%80%81App%E6%B5%81%E7%A8%8B%E4%B8%8E%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE%E7%9A%84%E8%B7%A8%E5%9B%A2%E9%98%9F%E8%AE%A8%E8%AE%BA.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 181,
+        "title": "One Pager - Repetitive Narrative_ Short Turns about a Boy and",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate brainstorm session for MOBILE (9:16):\n\nMeeting Content:\nTitle: Repetitive Narrative: Short Turns about a Boy and Others\n\n# Repetitive Narrative",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/52_Repetitive%20Narrative_%20Short%20Turns%20about%20a%20Boy%20and.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 182,
+        "title": "One Pager - Fragmented Chat with Noise, Chinese Lines, and Sho",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a social gathering event infographic with festive energy:\n\nMeeting Content:\nTitle: Fragmented Chat with Noise, Chinese Lines, and Short Narrati",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/53_Fragmented%20Chat%20with%20Noise%2C%20Chinese%20Lines%2C%20and%20Sho.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 183,
+        "title": "One Pager - 产品页面与数据变动对齐会议纪要",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a product design for MOBILE (9:16):\n\nMeeting Content:\nTitle: 产品页面与数据变动对齐会议纪要\n\n# 产品页面与数据变动对齐会议纪要\n\n## 会议目的\n对齐移动端“Get the Highlights”等产品页面的内容顺序、展示",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/54_%E4%BA%A7%E5%93%81%E9%A1%B5%E9%9D%A2%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%8F%98%E5%8A%A8%E5%AF%B9%E9%BD%90%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%81.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 184,
+        "title": "One Pager - 简短会话：开始与难点",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/55_%E7%AE%80%E7%9F%AD%E4%BC%9A%E8%AF%9D%EF%BC%9A%E5%BC%80%E5%A7%8B%E4%B8%8E%E9%9A%BE%E7%82%B9.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 185,
+        "title": "One Pager - 高铁遗落24万背包，铁路警方与乘警紧急联动",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an incident response or crisis management infographic with urgency:\n\nMeeting Content:\nTitle: 高铁遗落24万背包，铁路警方与乘警紧急联动\n\n- Audio too short or no key",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/56_%E9%AB%98%E9%93%81%E9%81%97%E8%90%BD24%E4%B8%87%E8%83%8C%E5%8C%85%EF%BC%8C%E9%93%81%E8%B7%AF%E8%AD%A6%E6%96%B9%E4%B8%8E%E4%B9%98%E8%AD%A6%E7%B4%A7%E6%80%A5%E8%81%94%E5%8A%A8.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 186,
+        "title": "One Pager - 两位自述：抗议者与自称有钱的人",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/57_%E4%B8%A4%E4%BD%8D%E8%87%AA%E8%BF%B0%EF%BC%9A%E6%8A%97%E8%AE%AE%E8%80%85%E4%B8%8E%E8%87%AA%E7%A7%B0%E6%9C%89%E9%92%B1%E7%9A%84%E4%BA%BA.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 187,
+        "title": "One Pager - 团队对接：设计、众筹视频与Facebook投放决策会",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a product launch for MOBILE (9:16):\n\nMeeting Content:\nTitle: 团队对接：设计、众筹视频与Facebook投放决策会\n\n# 团队对接：设计、众筹视频与Facebook投放决策会\n\n## 会议目的\n对接2月11日设计反馈、众筹视频",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/58_%E5%9B%A2%E9%98%9F%E5%AF%B9%E6%8E%A5%EF%BC%9A%E8%AE%BE%E8%AE%A1%E3%80%81%E4%BC%97%E7%AD%B9%E8%A7%86%E9%A2%91%E4%B8%8EFacebook%E6%8A%95%E6%94%BE%E5%86%B3%E7%AD%96%E4%BC%9A.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 188,
+        "title": "One Pager - 谈物品穿戴受损与练习时间的抱怨",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a creative hobby project infographic with artistic flair:\n\nMeeting Content:\nTitle: 谈物品穿戴受损与练习时间的抱怨\n\n- Audio too short or no key content for an",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/59_%E8%B0%88%E7%89%A9%E5%93%81%E7%A9%BF%E6%88%B4%E5%8F%97%E6%8D%9F%E4%B8%8E%E7%BB%83%E4%B9%A0%E6%97%B6%E9%97%B4%E7%9A%84%E6%8A%B1%E6%80%A8.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 189,
+        "title": "One Pager - 谈物品穿戴受损与练习时间的抱怨",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a creative hobby project infographic with artistic flair:\n\nMeeting Content:\nTitle: 谈物品穿戴受损与练习时间的抱怨\n\n# 谈物品穿戴受损与练习时间的抱怨\n\n- 场景概述：两位说话者以粤语口语交流，集中抱怨",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/60_%E8%B0%88%E7%89%A9%E5%93%81%E7%A9%BF%E6%88%B4%E5%8F%97%E6%8D%9F%E4%B8%8E%E7%BB%83%E4%B9%A0%E6%97%B6%E9%97%B4%E7%9A%84%E6%8A%B1%E6%80%A8.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 190,
+        "title": "One Pager - 一人独白式抒情与自我推广交织",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/61_%E4%B8%80%E4%BA%BA%E7%8B%AC%E7%99%BD%E5%BC%8F%E6%8A%92%E6%83%85%E4%B8%8E%E8%87%AA%E6%88%91%E6%8E%A8%E5%B9%BF%E4%BA%A4%E7%BB%87.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 191,
+        "title": "One Pager - 杂乱直播片段：推广、口号与碎语",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/62_%E6%9D%82%E4%B9%B1%E7%9B%B4%E6%92%AD%E7%89%87%E6%AE%B5%EF%BC%9A%E6%8E%A8%E5%B9%BF%E3%80%81%E5%8F%A3%E5%8F%B7%E4%B8%8E%E7%A2%8E%E8%AF%AD.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 192,
+        "title": "One Pager - 讨论竞品差异与展示形式",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/63_%E8%AE%A8%E8%AE%BA%E7%AB%9E%E5%93%81%E5%B7%AE%E5%BC%82%E4%B8%8E%E5%B1%95%E7%A4%BA%E5%BD%A2%E5%BC%8F.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 193,
+        "title": "One Pager - 单句时间报时",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/64_%E5%8D%95%E5%8F%A5%E6%97%B6%E9%97%B4%E6%8A%A5%E6%97%B6.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 194,
+        "title": "One Pager - Single Uninterpretable Utterance",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/65_Single%20Uninterpretable%20Utterance.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 195,
+        "title": "One Pager - 简短口头确认",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/66_%E7%AE%80%E7%9F%AD%E5%8F%A3%E5%A4%B4%E7%A1%AE%E8%AE%A4.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 196,
+        "title": "One Pager - 睡眠质量低的简短自述",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a wellness and health tracking infographic with fresh, energetic design:\n\nMeeting Content:\nTitle: 睡眠质量低的简短自述\n\n- Audio too short or no key conte",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/67_%E7%9D%A1%E7%9C%A0%E8%B4%A8%E9%87%8F%E4%BD%8E%E7%9A%84%E7%AE%80%E7%9F%AD%E8%87%AA%E8%BF%B0.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 197,
+        "title": "One Pager - Origen del nombre de la ciudad",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a research insights infographic with data visualization focus:\n\nMeeting Content:\nTitle: Origen del nombre de la ciudad\n\n- Audio too short or no",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/68_Origen%20del%20nombre%20de%20la%20ciudad.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 198,
+        "title": "One Pager - 简短单句记录：三条线",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/69_%E7%AE%80%E7%9F%AD%E5%8D%95%E5%8F%A5%E8%AE%B0%E5%BD%95%EF%BC%9A%E4%B8%89%E6%9D%A1%E7%BA%BF.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 199,
+        "title": "One Pager - 简短确认：这就是我想说的",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a personal daily summary / reflection infographic for MOBILE (9:16):\n\nInspired by Notion daily notes, bullet journal aesthetics, and personal p",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/70_%E7%AE%80%E7%9F%AD%E7%A1%AE%E8%AE%A4%EF%BC%9A%E8%BF%99%E5%B0%B1%E6%98%AF%E6%88%91%E6%83%B3%E8%AF%B4%E7%9A%84.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 200,
+        "title": "One Pager - 简短结语：这就是我想说的",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a personal daily summary / reflection infographic for MOBILE (9:16):\n\nInspired by Notion daily notes, bullet journal aesthetics, and personal p",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/71_%E7%AE%80%E7%9F%AD%E7%BB%93%E8%AF%AD%EF%BC%9A%E8%BF%99%E5%B0%B1%E6%98%AF%E6%88%91%E6%83%B3%E8%AF%B4%E7%9A%84.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 201,
+        "title": "One Pager - 傍晚询问：现在时间与天气",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a personal daily summary / reflection infographic for MOBILE (9:16):\n\nInspired by Notion daily notes, bullet journal aesthetics, and personal p",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/72_%E5%82%8D%E6%99%9A%E8%AF%A2%E9%97%AE%EF%BC%9A%E7%8E%B0%E5%9C%A8%E6%97%B6%E9%97%B4%E4%B8%8E%E5%A4%A9%E6%B0%94.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 202,
+        "title": "One Pager - Quick Chat_ Screenshot Mention and Packing Reminde",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a personal daily summary / reflection infographic for MOBILE (9:16):\n\nInspired by Notion daily notes, bullet journal aesthetics, and personal p",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/73_Quick%20Chat_%20Screenshot%20Mention%20and%20Packing%20Reminde.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 203,
+        "title": "One Pager - Next Day_ Two People at the Hospital",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a wellness and health tracking infographic with fresh, energetic design:\n\nMeeting Content:\nTitle: Next Day: Two People at the Hospital\n\n- Audio",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/74_Next%20Day_%20Two%20People%20at%20the%20Hospital.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 204,
+        "title": "One Pager - SageMaker实战与机器学习工程化导论",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a data pipeline flow optimized for MOBILE VERTICAL DISPLAY (9:16):\n\nMeeting Content:\nTitle: SageMaker实战与机器学习工程化导论\n\n# SageMaker实战与机器学习工程化导论\n\n##",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/75_SageMaker%E5%AE%9E%E6%88%98%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%AF%BC%E8%AE%BA.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 205,
+        "title": "One Pager - Very Short, Unclear Exchange",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/76_Very%20Short%2C%20Unclear%20Exchange.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 206,
+        "title": "One Pager - 设备异常：无法恢复与可能的 iOS 问题",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an incident response or crisis management infographic with urgency:\n\nMeeting Content:\nTitle: 设备异常：无法恢复与可能的 iOS 问题\n\n- Audio too short or no key",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/77_%E8%AE%BE%E5%A4%87%E5%BC%82%E5%B8%B8%EF%BC%9A%E6%97%A0%E6%B3%95%E6%81%A2%E5%A4%8D%E4%B8%8E%E5%8F%AF%E8%83%BD%E7%9A%84%20iOS%20%E9%97%AE%E9%A2%98.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 207,
+        "title": "One Pager - 带你逛华强北：法拉利、二手手机与翻新生意实录",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a stock market / trading session infographic optimized for MOBILE (9:16):\n\nInspired by financial dashboards and trading desk summaries.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/78_%E5%B8%A6%E4%BD%A0%E9%80%9B%E5%8D%8E%E5%BC%BA%E5%8C%97%EF%BC%9A%E6%B3%95%E6%8B%89%E5%88%A9%E3%80%81%E4%BA%8C%E6%89%8B%E6%89%8B%E6%9C%BA%E4%B8%8E%E7%BF%BB%E6%96%B0%E7%94%9F%E6%84%8F%E5%AE%9E%E5%BD%95.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 208,
+        "title": "One Pager - 华强北倒爷带你逛市场与法拉利轶事",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a research insights infographic with data visualization focus:\n\nMeeting Content:\nTitle: 华强北倒爷带你逛市场与法拉利轶事\n\n# 华强北倒爷带你逛市场与法拉利轶事\n\n## 节目概览\n- 嘉宾：在深圳华",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/79_%E5%8D%8E%E5%BC%BA%E5%8C%97%E5%80%92%E7%88%B7%E5%B8%A6%E4%BD%A0%E9%80%9B%E5%B8%82%E5%9C%BA%E4%B8%8E%E6%B3%95%E6%8B%89%E5%88%A9%E8%BD%B6%E4%BA%8B.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 209,
+        "title": "One Pager - 广告投放复盘：受众、素材与归因问题集中讨论",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/80_%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE%E5%A4%8D%E7%9B%98%EF%BC%9A%E5%8F%97%E4%BC%97%E3%80%81%E7%B4%A0%E6%9D%90%E4%B8%8E%E5%BD%92%E5%9B%A0%E9%97%AE%E9%A2%98%E9%9B%86%E4%B8%AD%E8%AE%A8%E8%AE%BA.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 210,
+        "title": "One Pager - 下达明日任务给惠龙",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate agile sprint for MOBILE (9:16):\n\nMeeting Content:\nTitle: 下达明日任务给惠龙\n\n- Audio too short or no key content for an automatic summary.\n\n- Tap “+” to",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/81_%E4%B8%8B%E8%BE%BE%E6%98%8E%E6%97%A5%E4%BB%BB%E5%8A%A1%E7%BB%99%E6%83%A0%E9%BE%99.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 211,
+        "title": "One Pager - 一句感叹：遇到困难",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a personal daily summary / reflection infographic for MOBILE (9:16):\n\nInspired by Notion daily notes, bullet journal aesthetics, and personal p",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/82_%E4%B8%80%E5%8F%A5%E6%84%9F%E5%8F%B9%EF%BC%9A%E9%81%87%E5%88%B0%E5%9B%B0%E9%9A%BE.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 212,
+        "title": "One Pager - 华强北地头蛇带你看二手手机江湖",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an executive strategy dashboard for MOBILE VERTICAL DISPLAY (9:16):\n\nMeeting Content:\nTitle: 华强北地头蛇带你看二手手机江湖\n\n# 华强北地头蛇带你看二手手机江湖\n\n一段跟随“华强北老江湖”张宇",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/83_%E5%8D%8E%E5%BC%BA%E5%8C%97%E5%9C%B0%E5%A4%B4%E8%9B%87%E5%B8%A6%E4%BD%A0%E7%9C%8B%E4%BA%8C%E6%89%8B%E6%89%8B%E6%9C%BA%E6%B1%9F%E6%B9%96.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 213,
+        "title": "One Pager - 跟着倒爷逛华强北：手机买卖与翻新的生意经",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a stock market / trading session infographic optimized for MOBILE (9:16):\n\nInspired by financial dashboards and trading desk summaries.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/84_%E8%B7%9F%E7%9D%80%E5%80%92%E7%88%B7%E9%80%9B%E5%8D%8E%E5%BC%BA%E5%8C%97%EF%BC%9A%E6%89%8B%E6%9C%BA%E4%B9%B0%E5%8D%96%E4%B8%8E%E7%BF%BB%E6%96%B0%E7%9A%84%E7%94%9F%E6%84%8F%E7%BB%8F.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 214,
+        "title": "One Pager - 跟着倒爷逛华强北：法拉利、二手手机与赚钱秘籍",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a research insights infographic with data visualization focus:\n\nMeeting Content:\nTitle: 跟着倒爷逛华强北：法拉利、二手手机与赚钱秘籍\n\n# 跟着倒爷逛华强北：法拉利、二手手机与赚钱秘籍\n\n## 节目",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/85_%E8%B7%9F%E7%9D%80%E5%80%92%E7%88%B7%E9%80%9B%E5%8D%8E%E5%BC%BA%E5%8C%97%EF%BC%9A%E6%B3%95%E6%8B%89%E5%88%A9%E3%80%81%E4%BA%8C%E6%89%8B%E6%89%8B%E6%9C%BA%E4%B8%8E%E8%B5%9A%E9%92%B1%E7%A7%98%E7%B1%8D.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 215,
+        "title": "One Pager - 跟着倒爷逛华强北：从法拉利到假新机的生意经",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a research insights infographic with data visualization focus:\n\nMeeting Content:\nTitle: 跟着倒爷逛华强北：从法拉利到假新机的生意经\n\n# 跟着倒爷逛华强北：从法拉利到假新机的生意经\n\n本期由一位在深",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/86_%E8%B7%9F%E7%9D%80%E5%80%92%E7%88%B7%E9%80%9B%E5%8D%8E%E5%BC%BA%E5%8C%97%EF%BC%9A%E4%BB%8E%E6%B3%95%E6%8B%89%E5%88%A9%E5%88%B0%E5%81%87%E6%96%B0%E6%9C%BA%E7%9A%84%E7%94%9F%E6%84%8F%E7%BB%8F.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 216,
+        "title": "One Pager - EDM 发送、弹窗与众筹定金的行动会议",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a product launch for MOBILE (9:16):\n\nMeeting Content:\nTitle: EDM 发送、弹窗与众筹定金的行动会议\n\n# EDM 发送、弹窗与众筹定金的行动会议\n\n本次会议围绕站内弹窗触发逻辑优化、EDM发送策略与节前一周的执行计划展开，目",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/87_EDM%20%E5%8F%91%E9%80%81%E3%80%81%E5%BC%B9%E7%AA%97%E4%B8%8E%E4%BC%97%E7%AD%B9%E5%AE%9A%E9%87%91%E7%9A%84%E8%A1%8C%E5%8A%A8%E4%BC%9A%E8%AE%AE.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 217,
+        "title": "One Pager - Kindergarten conference_ praise, bullying concern,",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a warm family planning infographic with cozy aesthetic:\n\nMeeting Content:\nTitle: Kindergarten conference: praise, bullying concern, and home-sc",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/88_Kindergarten%20conference_%20praise%2C%20bullying%20concern%2C.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 218,
+        "title": "One Pager - 对方还在吗？短促连问抓对方注意",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/89_%E5%AF%B9%E6%96%B9%E8%BF%98%E5%9C%A8%E5%90%97%EF%BC%9F%E7%9F%AD%E4%BF%83%E8%BF%9E%E9%97%AE%E6%8A%93%E5%AF%B9%E6%96%B9%E6%B3%A8%E6%84%8F.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 219,
+        "title": "One Pager - 节前市场与科技、地缘政治的风险与机会梳理",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a stock market / trading session infographic optimized for MOBILE (9:16):\n\nInspired by financial dashboards and trading desk summaries.\n\nMeetin",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/90_%E8%8A%82%E5%89%8D%E5%B8%82%E5%9C%BA%E4%B8%8E%E7%A7%91%E6%8A%80%E3%80%81%E5%9C%B0%E7%BC%98%E6%94%BF%E6%B2%BB%E7%9A%84%E9%A3%8E%E9%99%A9%E4%B8%8E%E6%9C%BA%E4%BC%9A%E6%A2%B3%E7%90%86.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 220,
+        "title": "One Pager - 直播对话：主讲连线、产品文案与市井闲谈混杂",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a brand strategy / marketing planning infographic for MOBILE (9:16):\n\nInspired by startup launch decks and product marketing one-pagers.\n\nMeeti",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/91_%E7%9B%B4%E6%92%AD%E5%AF%B9%E8%AF%9D%EF%BC%9A%E4%B8%BB%E8%AE%B2%E8%BF%9E%E7%BA%BF%E3%80%81%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%88%E4%B8%8E%E5%B8%82%E4%BA%95%E9%97%B2%E8%B0%88%E6%B7%B7%E6%9D%82.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 221,
+        "title": "One Pager - 华强北实地带货：法拉利、大佬与二手手机生意内幕",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a research insights infographic with data visualization focus:\n\nMeeting Content:\nTitle: 华强北实地带货：法拉利、大佬与二手手机生意内幕\n\n# 华强北实地带货：法拉利、大佬与二手手机生意内幕\n\n##",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/93_%E5%8D%8E%E5%BC%BA%E5%8C%97%E5%AE%9E%E5%9C%B0%E5%B8%A6%E8%B4%A7%EF%BC%9A%E6%B3%95%E6%8B%89%E5%88%A9%E3%80%81%E5%A4%A7%E4%BD%AC%E4%B8%8E%E4%BA%8C%E6%89%8B%E6%89%8B%E6%9C%BA%E7%94%9F%E6%84%8F%E5%86%85%E5%B9%95.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 222,
+        "title": "One Pager - 华强北带货走访：法拉利、翻新与二手手机生意细节",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate an executive strategy dashboard for MOBILE VERTICAL DISPLAY (9:16):\n\nMeeting Content:\nTitle: 华强北带货走访：法拉利、翻新与二手手机生意细节\n\n# 华强北带货走访：法拉利、翻新与二手手机生意细节",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/94_%E5%8D%8E%E5%BC%BA%E5%8C%97%E5%B8%A6%E8%B4%A7%E8%B5%B0%E8%AE%BF%EF%BC%9A%E6%B3%95%E6%8B%89%E5%88%A9%E3%80%81%E7%BF%BB%E6%96%B0%E4%B8%8E%E4%BA%8C%E6%89%8B%E6%89%8B%E6%9C%BA%E7%94%9F%E6%84%8F%E7%BB%86%E8%8A%82.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    },
+    {
+        "id": 223,
+        "title": "One Pager - 单字回应的短对话",
+        "description": "Meeting summary infographic (uploaded 2026-03-30).",
+        "prompt": "======================================================================\nPROMPT\n======================================================================\n\nCreate a premium general-purpose meeting summary infographic for MOBILE (9:16):\n\nInspired by Notion-style dashboards, clean editorial layouts, and mod",
+        "images": [
+            "https://youyouxiangwang-prog.github.io/awesome-nano-banana-prompts/infographics/95_%E5%8D%95%E5%AD%97%E5%9B%9E%E5%BA%94%E7%9A%84%E7%9F%AD%E5%AF%B9%E8%AF%9D.jpg"
+        ],
+        "tags": [
+            "one-pager",
+            "infographic"
+        ],
+        "language": "ZH",
+        "featured": false,
+        "raycast": false
+    }
+]
 ];
